@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Save Snapchat Memories to Camera Roll — Memories: Save to Photos</title>
+  <meta name="description" content="Turn your Snapchat Memories export into a sorted photo library — real dates, places and captions restored, entirely on your iPhone. First 100 free.">
+  <!-- TODO: set real domain -->
+  <link rel="canonical" href="https://MEMORYRESTORE.EXAMPLE/">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is my data uploaded anywhere?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. The app has no servers, no account and no analytics. Your export is read on your iPhone and your photos are written to your photo library on your iPhone. The app works the same with the internet turned off." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this work with the official Snapchat export?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — that's the only thing it works with. You request your data through Snapchat's own My Data page, download the zip files Snapchat emails you, and open them in the app. The app never connects to Snapchat or accesses your account." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my photos lose quality?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Photos are saved exactly as they are in your export — byte for byte, no recompression. Videos without a caption are saved as-is too. A video with text or drawings on it has to be re-rendered once to bake the caption in permanently." }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to the text and drawings on my snaps?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Snapchat's export strips captions and drawings into separate overlay files. The app composites them back onto the photo or video, so what you save looks like what you remember." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this app affiliated with Snapchat?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It is an independent app and is not affiliated with, endorsed by, or sponsored by Snap Inc. It processes a file you downloaded yourself through Snapchat's official export." }
+      },
+      {
+        "@type": "Question",
+        "name": "What if my export is huge, or split across many zip files?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Big libraries arrive as several zip parts — pick them all at once and the app treats them as one export. You choose what to import by month, you can pause any time, and an interrupted import resumes where it left off without creating duplicates." }
+      },
+      {
+        "@type": "Question",
+        "name": "How does it know the real date and place of each memory?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Your export includes a file called memories_history.json that records when and where each memory was captured. The app matches every photo and video to its entry and writes that date, time and location into the saved photo's metadata." }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the app cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Your first 100 memories are free, on your real export. One payment of 79 kr (shown in your local currency on the App Store) unlocks everything. There is no subscription." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="./" aria-current="page"><img class="brand-logo" src="public/images/app-icon.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="guide/">Export guide</a>
+      <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
+      <!-- TODO: replace href with real App Store URL -->
+      <a class="btn-nav" href="https://apps.apple.com/app/idXXXXXXXXXX">Download now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 · Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Memories: Save to Photos for iPhone</p>
+        <h1>Your memories are sitting on Snapchat’s&nbsp;servers. Bring them&nbsp;home.</h1>
+        <p class="lede">It turns your Snapchat Memories export into a sorted photo library — right dates, right places, captions included.</p>
+        <!-- TODO: replace href with real App Store URL, and this placeholder with Apple's official badge SVG -->
+        <a class="appstore-badge" href="https://apps.apple.com/app/idXXXXXXXXXX">
+          <span class="pre">Download on the</span>
+          <span class="name">App Store</span>
+        </a>
+        <p class="hero-proof micro">Works entirely on your iPhone&ensp;·&ensp;No account&ensp;·&ensp;Uses Snapchat’s official export</p>
+      </div>
+      <div class="hero-shot">
+        <!-- /public/images/hero-app-import.png -->
+        <div class="ph ph-phone" role="img" aria-label="The app's import screen on an iPhone, showing memories found in an export, grouped by month.">
+          <span class="ph-label"><strong>hero-app-import.png</strong>1290 × 2796<br>App import screen: an opened export, memories grouped by month with photo previews, “Import 2,481 memories” button.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · The problem -->
+  <section class="section-tall section-band">
+    <div class="container prose">
+      <p class="eyebrow">The problem</p>
+      <h2>The export Snapchat gives you is not your memories. It’s a box of parts.</h2>
+      <p>Years of your life are in Snapchat Memories — and only in Snapchat Memories. So you do the responsible thing: you request your data, wait for the email, download the zip files. And then you open them.</p>
+      <p>Thousands of files with scrambled names. Every photo stamped with the date you exported it, not the day it happened. The captions and doodles you wrote — gone, split off into separate overlay files you’ve never heard of. The date, the place, which caption belongs to which photo: it’s all in there, buried in a JSON file the export assumes you’ll never read.</p>
+      <p>Your memories survived the trip. They just arrived in pieces.</p>
+    </div>
+  </section>
+
+  <!-- 3 · What it does -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">What it does</p>
+      <h2 style="max-width: 16em;">It puts the pieces back together. On your phone, nowhere else.</h2>
+
+      <div style="margin-top: clamp(40px, 6vw, 80px);">
+        <article class="cap">
+          <div class="cap-text">
+            <h3>Right date, right place — restored</h3>
+            <p>The app reads the record Snapchat buried in your export and writes the real capture date, time and location back into every photo and video. A snap from July 2017 lands in July 2017, on the map, exactly like a photo taken with the camera.</p>
+          </div>
+          <div class="cap-shot">
+            <!-- /public/images/cap-dates.png -->
+            <div class="ph ph-phone" role="img" aria-label="A restored photo in the iOS Photos app showing its original 2017 date and its location on the map.">
+              <span class="ph-label"><strong>cap-dates.png</strong>1290 × 2796<br>iOS Photos detail view of an imported memory: original date “15 July 2017” and location pin visible.</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cap">
+          <div class="cap-text">
+            <h3>Captions and drawings, baked back in</h3>
+            <p>The export ships your text and doodles as separate transparent files, detached from the snaps they belong to. The app matches each one to its photo or video and composites it back on — permanently part of the picture, the way you remember it.</p>
+          </div>
+          <div class="cap-shot">
+            <!-- /public/images/cap-overlay.png -->
+            <div class="ph ph-phone" role="img" aria-label="A snap with its original caption text rendered back onto the image.">
+              <span class="ph-label"><strong>cap-overlay.png</strong>1290 × 2796<br>A finished memory with its caption/drawing visibly baked in (pick one with a fun, personal caption).</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cap">
+          <div class="cap-text">
+            <h3>Everything lands in Photos, sorted</h3>
+            <p>Your memories go straight into your photo library and fall into place — in your timeline, in your year views, in “On this day”. Choose what to import by month, pause a big run any time, and pick up where you left off without duplicates.</p>
+          </div>
+          <div class="cap-shot">
+            <!-- /public/images/cap-photos-sorted.png -->
+            <div class="ph ph-phone" role="img" aria-label="The iOS Photos year view, filled with restored memories in their correct years.">
+              <span class="ph-label"><strong>cap-photos-sorted.png</strong>1290 × 2796<br>iOS Photos “Years” view after import: 2016–2024 populated with restored memories.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Show, don't tell -->
+  <section class="section-tall section-band">
+    <div class="container">
+      <p class="eyebrow">Before and after</p>
+      <h2 style="max-width: 15em;">From a folder of noise to a library of your life.</h2>
+      <div class="beforeafter bleed" style="margin-top: clamp(40px, 6vw, 72px);">
+        <figure>
+          <!-- /public/images/before-export-folder.png -->
+          <div class="ph ph-wide" role="img" aria-label="The raw Snapchat export in the Files app: zip archives and image files with long randomised names and no dates.">
+            <span class="ph-label"><strong>before-export-folder.png</strong>2400 × 1350<br>Files app view of a raw export: mydata~*.zip parts and extracted files with UUID names, all dated “today”.</span>
+          </div>
+          <figcaption><strong>Before</strong> — what Snapchat hands you: scrambled filenames, export-day dates, captions stripped off.</figcaption>
+        </figure>
+        <figure>
+          <!-- /public/images/after-photos-library.png -->
+          <div class="ph ph-wide" role="img" aria-label="The same memories after import: the iOS Photos library sorted by year, with locations on the map.">
+            <span class="ph-label"><strong>after-photos-library.png</strong>2400 × 1350<br>The same memories in iOS Photos: timeline sorted by real year, map view dotted with locations. Warm, personal images.</span>
+          </div>
+          <figcaption><strong>After</strong> — the same memories in Photos: real dates, real places, captions where they belong.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Privacy -->
+  <section class="section-tall">
+    <div class="container prose">
+      <p class="eyebrow">Privacy</p>
+      <h2>Nothing leaves your phone. Nothing.</h2>
+      <p>No account. No upload. No analytics. The app has no servers to send anything to — it works the same with the internet switched off.</p>
+      <p>These are your friendships, your trips, your bad haircuts. They’re your life, not our data. The app reads the export you downloaded, rebuilds your memories on your device, and saves them to your library. That’s the whole story.</p>
+      <p class="small">The full policy is short and readable: <a href="privacy/">privacy policy</a>.</p>
+    </div>
+  </section>
+
+  <!-- 6 · Guide teaser -->
+  <section class="section section-band">
+    <div class="container">
+      <p class="eyebrow">Getting your export</p>
+      <h2 style="max-width: 17em;">First, get your memories out of Snapchat. We’ll walk you through it.</h2>
+      <ol class="steps" style="margin-top: var(--sp-xxl);">
+        <li>Request your data on Snapchat’s <strong>My Data</strong> page — with the two switches that matter turned on.</li>
+        <li>Wait for Snapchat’s email — usually a few hours — and download every zip file.</li>
+        <li>Open them in the app. Done.</li>
+      </ol>
+      <p style="margin-top: var(--sp-xl);"><a class="btn btn-quiet" href="guide/">Read the full export guide</a></p>
+      <p class="micro" style="margin-top: var(--sp-m);">The guide is free and works on its own — no app required to follow it.</p>
+    </div>
+  </section>
+
+  <!-- 7 · Pricing -->
+  <section class="section-tall">
+    <div class="container pricing-grid">
+      <div>
+        <p class="eyebrow">Pricing</p>
+        <h2>Try it on your real export. Then pay once, ever.</h2>
+        <p style="margin-top: var(--sp-l); color: var(--ink-2); max-width: 32em;">Your first 100 memories are free — not a demo, your actual photos, restored and saved. When you’ve seen that it works, one payment unlocks the rest. Every memory you save is yours in Photos forever; the app never has to be opened again.</p>
+      </div>
+      <div class="card card-accent" style="text-align: left;">
+        <p class="price-figure">79&nbsp;kr
+          <small>one payment · no subscription · shown in your local currency on the App&nbsp;Store</small>
+        </p>
+        <p style="margin-top: var(--sp-xl);">
+          <a class="btn btn-primary" href="https://apps.apple.com/app/idXXXXXXXXXX">Get the app</a>
+        </p>
+        <p class="micro" style="margin-top: var(--sp-m);">First 100 memories free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · FAQ -->
+  <section class="section section-band">
+    <div class="container">
+      <p class="eyebrow">Questions</p>
+      <h2>Asked and answered</h2>
+      <div class="faq" style="margin-top: var(--sp-xxl);">
+        <details>
+          <summary>Is my data uploaded anywhere?</summary>
+          <p>No. The app has no servers, no account and no analytics. Your export is read on your iPhone and your photos are written to your photo library on your iPhone. The app works the same with the internet turned off.</p>
+        </details>
+        <details>
+          <summary>Does this work with the official Snapchat export?</summary>
+          <p>Yes — that’s the only thing it works with. You request your data through Snapchat’s own My&nbsp;Data page, download the zip files Snapchat emails you, and open them in the app. The app never connects to Snapchat or accesses your account.</p>
+        </details>
+        <details>
+          <summary>Will my photos lose quality?</summary>
+          <p>Photos are saved exactly as they are in your export — byte for byte, no recompression. Videos without a caption are saved as-is too. A video with text or drawings on it has to be re-rendered once to bake the caption in permanently.</p>
+        </details>
+        <details>
+          <summary>What happens to the text and drawings on my snaps?</summary>
+          <p>Snapchat’s export strips captions and drawings into separate overlay files. The app composites them back onto the photo or video, so what you save looks like what you remember.</p>
+        </details>
+        <details>
+          <summary>Is this app affiliated with Snapchat?</summary>
+          <p>No. It is an independent app and is not affiliated with, endorsed by, or sponsored by Snap&nbsp;Inc. It processes a file you downloaded yourself through Snapchat’s official export.</p>
+        </details>
+        <details>
+          <summary>What if my export is huge, or split across many zip files?</summary>
+          <p>Big libraries arrive as several zip parts — pick them all at once and the app treats them as one export. You choose what to import by month, you can pause any time, and an interrupted import resumes where it left off without creating duplicates.</p>
+        </details>
+        <details>
+          <summary>How does it know the real date and place of each memory?</summary>
+          <p>Your export includes a file called <code>memories_history.json</code> that records when and where each memory was captured. The app matches every photo and video to its entry and writes that date, time and location into the saved photo’s metadata.</p>
+        </details>
+        <details>
+          <summary>What does it cost?</summary>
+          <p>Your first 100 memories are free, on your real export. One payment of 79&nbsp;kr (shown in your local currency on the App&nbsp;Store) unlocks everything. There is no subscription.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 9 · Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <nav aria-label="Pages">
+        <span class="head">Memories: Save to Photos</span>
+        <a href="./">Home</a>
+        <a href="guide/">Export guide</a>
+      </nav>
+      <nav aria-label="Legal">
+        <span class="head">Legal</span>
+        <a href="privacy/">Privacy policy</a>
+        <a href="terms/">Terms of use</a>
+      </nav>
+      <nav aria-label="Support">
+        <span class="head">Support</span>
+        <!-- TODO: confirm support email -->
+        <a href="mailto:ludvig.appdeveloper@gmail.com">ludvig.appdeveloper@gmail.com</a>
+      </nav>
+    </div>
+    <p class="legal-line">Memories: Save to Photos is not affiliated with, endorsed by, or sponsored by Snap&nbsp;Inc. Snapchat is a trademark of Snap&nbsp;Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>

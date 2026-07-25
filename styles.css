@@ -1,0 +1,336 @@
+/* ============================================================
+   Memories: Save to Photos — site design system
+   Tokens transcribed from the app (Memory Sorter/Theme/Theme.swift):
+   one darkroom-green accent on porcelain neutrals, New York-style
+   serif display type, hairline edges. No gradients, no glows, no
+   shadows doing hierarchy work — solid fills and typography carry
+   the page.
+   ============================================================ */
+
+/* ---------- Tokens ---------- */
+
+:root {
+  /* Colour — light. Accent is the app's darkroom green; the neutrals are warmed a
+     touch off the app's cool porcelain so green-on-cool doesn't read clinical
+     (green + warm-neutral = archival, not clinical). */
+  --accent: #1f5c4c;            /* darkroom green — UIColor(0.122, 0.361, 0.298) */
+  --accent-soft: rgba(31, 92, 76, 0.10);
+  --bg: #f4f2ed;                /* warm porcelain — nudged warm from app cool #f3f4f6 */
+  --surface: #ffffff;
+  --ink: #1f1d18;               /* warm near-black */
+  --ink-2: rgba(31, 29, 24, 0.66);
+  --ink-3: rgba(31, 29, 24, 0.45);
+  --hairline: rgba(31, 29, 24, 0.10);
+  --on-accent: #ffffff;
+
+  /* Type */
+  --serif: "New York", ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Scale — hero huge, support small (deliberate contrast) */
+  --fs-hero: clamp(2.5rem, 6.5vw, 4.25rem);
+  --fs-h2: clamp(1.65rem, 3.6vw, 2.4rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9rem;
+  --fs-micro: 0.8125rem;
+
+  /* Spacing (app Space tokens, ×1px) + section rhythm */
+  --sp-xs: 4px;  --sp-s: 8px;  --sp-m: 12px;  --sp-l: 16px;
+  --sp-xl: 24px; --sp-xxl: 32px; --sp-xxxl: 44px;
+
+  /* Radii (app Radius tokens) */
+  --r-chip: 10px; --r-tile: 12px; --r-button: 14px; --r-card: 16px;
+
+  --container: 1180px;
+  --prose: 740px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #5fbfa0;          /* sea green — UIColor(0.373, 0.749, 0.627) on near-black */
+    --accent-soft: rgba(95, 191, 160, 0.18);
+    --bg: #16150f;              /* warm near-black (app uses system dark) */
+    --surface: #211f19;
+    --ink: #efece4;
+    --ink-2: rgba(239, 236, 228, 0.68);
+    --ink-3: rgba(239, 236, 228, 0.45);
+    --hairline: rgba(239, 236, 228, 0.12);
+    --on-accent: #0d211b;
+  }
+}
+
+/* ---------- Base ---------- */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+body {
+  font-family: var(--sans);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance; }
+h1 { font-size: var(--fs-hero); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); line-height: 1.3; }
+
+.container { max-width: var(--container); margin-inline: auto; padding-inline: clamp(20px, 5vw, 44px); }
+.prose { max-width: var(--prose); }
+.prose p, .prose ul, .prose ol { margin-bottom: 1em; }
+.prose ul, .prose ol { padding-left: 1.4em; }
+.prose h2 { margin-top: 2.2em; margin-bottom: 0.55em; }
+.prose h3 { margin-top: 1.6em; margin-bottom: 0.4em; }
+.prose strong { font-weight: 650; }
+.prose code { font-family: var(--mono); font-size: 0.88em; background: var(--accent-soft); padding: 0.1em 0.35em; border-radius: 5px; }
+
+.eyebrow {
+  font-family: var(--sans); font-size: var(--fs-micro); font-weight: 650;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
+}
+
+.small { font-size: var(--fs-small); color: var(--ink-2); }
+.micro { font-size: var(--fs-micro); color: var(--ink-3); }
+
+/* ---------- Header / nav ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--hairline);
+  background: var(--bg);
+}
+.site-header .container {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-block: var(--sp-l); gap: var(--sp-l); flex-wrap: wrap;
+}
+.wordmark {
+  display: inline-flex; align-items: center; gap: var(--sp-s);
+  font-family: var(--serif); font-weight: 600; font-size: 1.2rem;
+  color: var(--accent); white-space: nowrap;
+}
+.wordmark:hover { text-decoration: none; }
+.brand-logo { width: 54px; height: 54px; border-radius: 13px; flex-shrink: 0; display: block; }
+/* The App Store name is "Memories: Save to Photos"; the descriptor half sits quieter
+   so the colon reads as intentional branding rather than a typo. */
+.wordmark .wm-tail { color: var(--ink-3); font-weight: 400; }
+.site-nav { display: flex; align-items: center; gap: var(--sp-xl); font-size: var(--fs-small); }
+.site-nav a { color: var(--ink-2); font-weight: 500; }
+.site-nav a[aria-current="page"] { color: var(--ink); }
+/* Download call-to-action in the nav — accent fill, distinct from the quiet text links. */
+.site-nav .btn-nav {
+  background: var(--accent); color: var(--on-accent); font-weight: 600;
+  padding: 8px 16px; border-radius: var(--r-button);
+}
+.site-nav .btn-nav:hover { text-decoration: none; filter: brightness(1.06); }
+@media (max-width: 520px) {
+  .site-nav { gap: var(--sp-l); }
+  .site-nav .btn-nav { padding: 7px 14px; }
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-block; font-weight: 600; font-size: var(--fs-body);
+  padding: 14px 28px; border-radius: var(--r-button);
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { text-decoration: none; filter: brightness(1.06); }
+.btn-quiet { border-color: var(--hairline); background: var(--surface); color: var(--accent); }
+.btn-quiet:hover { text-decoration: none; border-color: var(--accent); }
+
+/* App Store badge placeholder — swap for Apple's official badge SVG */
+.appstore-badge {
+  display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  min-height: 56px; padding: 9px 24px;
+  background: var(--accent); color: var(--on-accent);
+  border-radius: var(--r-button); line-height: 1.12;
+}
+.appstore-badge:hover { text-decoration: none; filter: brightness(1.06); }
+.appstore-badge .pre { font-size: 0.72rem; font-weight: 500; opacity: 0.82; }
+.appstore-badge .name { font-size: 1.2rem; font-weight: 600; margin-top: 1px; }
+
+/* ---------- Sections & rhythm (deliberately uneven) ---------- */
+
+.section { padding-block: clamp(48px, 7vw, 96px); }
+.section-tight { padding-block: clamp(36px, 5vw, 64px); }
+.section-tall { padding-block: clamp(72px, 10vw, 132px); }
+.section-band { background: var(--surface); border-block: 1px solid var(--hairline); }
+
+/* ---------- Hero ---------- */
+
+.hero { padding-block: clamp(56px, 8vw, 116px) clamp(40px, 6vw, 84px); }
+.hero-grid {
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  gap: clamp(32px, 5vw, 72px); align-items: center;
+}
+.hero h1 { margin: var(--sp-l) 0 var(--sp-xl); }
+.hero .lede { font-size: 1.2rem; color: var(--ink-2); max-width: 34em; margin-bottom: var(--sp-xxl); }
+.hero-proof { margin-top: var(--sp-l); }
+.hero-shot { transform: rotate(2.5deg); margin-block: -12px; }
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-shot { max-width: 300px; transform: rotate(1.5deg); }
+}
+
+/* ---------- Capability rows (alternating, off-axis; NOT a card grid) ---------- */
+
+.cap { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.cap + .cap { margin-top: clamp(56px, 8vw, 110px); }
+.cap:nth-of-type(even) .cap-text { order: 2; }
+.cap:nth-of-type(even) .cap-shot { order: 1; }
+.cap-shot { max-width: 340px; justify-self: center; }
+.cap:nth-of-type(1) .cap-shot { transform: rotate(-2deg); }
+.cap:nth-of-type(3) .cap-shot { transform: rotate(1.5deg); }
+.cap-text h3 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); margin: var(--sp-s) 0 var(--sp-m); }
+.cap-text p { color: var(--ink-2); max-width: 30em; }
+@media (max-width: 720px) {
+  .cap, .cap:nth-of-type(even) { grid-template-columns: 1fr; }
+  .cap:nth-of-type(even) .cap-text { order: 1; }
+  .cap:nth-of-type(even) .cap-shot { order: 2; }
+  .cap-shot { max-width: 280px; }
+}
+
+/* ---------- Before / after ---------- */
+
+.beforeafter { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 3vw, 32px); align-items: start; }
+.beforeafter figure:first-child { transform: translateY(28px) rotate(-1deg); }
+.beforeafter figure:last-child { transform: rotate(0.75deg); }
+.beforeafter figcaption { margin-top: var(--sp-m); font-size: var(--fs-small); color: var(--ink-2); }
+@media (max-width: 720px) {
+  .beforeafter { grid-template-columns: 1fr; }
+  .beforeafter figure:first-child { transform: none; }
+  .beforeafter figure:last-child { transform: none; }
+}
+
+/* Wide shot that bleeds past the text column */
+.bleed { width: min(100%, var(--container) + 120px); margin-inline: auto; }
+
+/* ---------- Cards (flat, hairline — app Card) ---------- */
+
+.card {
+  background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: var(--r-card); padding: var(--sp-xl);
+}
+.card-accent { border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+
+/* ---------- Steps (guide teaser + guide page) ---------- */
+
+.steps { list-style: none; padding: 0; counter-reset: step; max-width: 34em; }
+.steps li {
+  counter-increment: step; display: flex; gap: var(--sp-l); align-items: baseline;
+  padding-block: var(--sp-l);
+}
+.steps li + li { border-top: 1px solid var(--hairline); }
+.steps li::before {
+  content: counter(step);
+  flex: 0 0 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent);
+  border-radius: 50%; font-weight: 650; font-size: var(--fs-small);
+  transform: translateY(6px);
+}
+
+/* ---------- Guide walkthrough (numbered step beside a screenshot) ---------- */
+
+.walk { margin-top: clamp(28px, 4vw, 48px); }
+.walk-step {
+  display: grid; grid-template-columns: minmax(0, 1fr) 320px;
+  gap: clamp(28px, 5vw, 72px); align-items: center;
+  padding-block: clamp(28px, 4vw, 48px);
+}
+.walk-step + .walk-step { border-top: 1px solid var(--hairline); }
+/* Alternate sides: image right on odd steps, left on even. */
+.walk-step:nth-child(even) { grid-template-columns: 320px minmax(0, 1fr); }
+.walk-step:nth-child(even) .walk-copy { order: 2; }
+.walk-step:nth-child(even) .walk-shot { order: 1; }
+.walk-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent);
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 600;
+  margin-bottom: var(--sp-l);
+}
+.walk-copy h3 { font-size: clamp(1.3rem, 2.4vw, 1.65rem); margin-bottom: var(--sp-m); }
+.walk-copy p { color: var(--ink-2); max-width: 34em; }
+.walk-copy p + p { margin-top: var(--sp-m); }
+.walk-copy .aside { margin-top: var(--sp-m); font-size: var(--fs-small); color: var(--ink-3); }
+.walk-shot { justify-self: center; width: 100%; max-width: 320px; }
+.walk-shot .ph-phone { border-radius: 22px; }
+/* Real screenshots vary in shape (tall phone shots, a wide status strip, etc.), so each
+   keeps its own aspect ratio — capped by height so a tall shot can't dominate the step —
+   rather than being forced into the placeholder's phone frame. */
+.walk-shot img {
+  display: block; margin-inline: auto;
+  max-width: 100%; max-height: 540px; width: auto; height: auto;
+  border-radius: 14px; border: 1px solid var(--hairline);
+}
+.walk-shot figcaption { margin-top: var(--sp-s); font-size: var(--fs-micro); color: var(--ink-3); text-align: center; }
+@media (max-width: 720px) {
+  .walk-step, .walk-step:nth-child(even) { grid-template-columns: 1fr; gap: var(--sp-l); }
+  /* Stacked: always text first, then image — regardless of the desktop side. */
+  .walk-step:nth-child(even) .walk-copy { order: 1; }
+  .walk-step:nth-child(even) .walk-shot { order: 2; }
+  .walk-shot { max-width: 280px; justify-self: start; }
+}
+
+/* ---------- Pricing ---------- */
+
+.pricing-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 4fr); gap: clamp(32px, 5vw, 64px); align-items: center; }
+.price-figure { font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 3.6rem); font-weight: 600; line-height: 1; }
+.price-figure small { font-family: var(--sans); font-size: var(--fs-small); font-weight: 500; color: var(--ink-2); display: block; margin-top: var(--sp-m); letter-spacing: 0; }
+@media (max-width: 720px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+/* ---------- FAQ ---------- */
+
+.faq { max-width: var(--prose); }
+.faq details { border-top: 1px solid var(--hairline); }
+.faq details:last-child { border-bottom: 1px solid var(--hairline); }
+.faq summary {
+  cursor: pointer; list-style: none; padding-block: var(--sp-l);
+  font-weight: 600; font-size: var(--fs-body); font-family: var(--sans);
+  display: flex; justify-content: space-between; gap: var(--sp-l); align-items: baseline;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--accent); font-weight: 500; font-size: 1.2em; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { padding-bottom: var(--sp-xl); color: var(--ink-2); max-width: 36em; }
+.faq details p + p { margin-top: -8px; }
+
+/* ---------- Image placeholders (exact final aspect ratios) ---------- */
+
+.ph {
+  background: var(--accent-soft); border: 1px solid var(--hairline);
+  border-radius: var(--r-tile); overflow: hidden;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  padding: var(--sp-l);
+}
+.ph-phone { aspect-ratio: 1290 / 2796; border-radius: 24px; }
+.ph-wide { aspect-ratio: 2400 / 1350; }
+.ph .ph-label { font-family: var(--mono); font-size: 0.72rem; line-height: 1.7; color: var(--ink-2); overflow-wrap: anywhere; }
+.ph .ph-label strong { display: block; color: var(--ink); font-weight: 600; }
+
+/* ---------- Footer ---------- */
+
+.site-footer { border-top: 1px solid var(--hairline); padding-block: var(--sp-xxxl); font-size: var(--fs-small); color: var(--ink-2); }
+.footer-cols { display: flex; flex-wrap: wrap; gap: var(--sp-xxl) clamp(32px, 8vw, 96px); margin-bottom: var(--sp-xxl); }
+.footer-cols nav { display: flex; flex-direction: column; gap: var(--sp-s); }
+.footer-cols a { color: var(--ink-2); }
+.footer-cols .head { font-weight: 650; color: var(--ink); margin-bottom: var(--sp-xs); }
+.legal-line { color: var(--ink-3); font-size: var(--fs-micro); max-width: 46em; }

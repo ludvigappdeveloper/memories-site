@@ -45,5 +45,5 @@ content, keep out the Snapchat logo/ghost mark and brand-yellow chrome where you
 |---|---|---|
 | `app-icon.png` **(you add this)** | Header wordmark logo (all pages) | **Save the real app icon here as `app-icon.png`** (square, e.g. 512×512 or 1024×1024). The header already points at it; until it exists, an SVG recreation (`app-icon.svg`) shows automatically as a fallback via the `<img onerror>`. No markup change needed once you drop the PNG in. |
 | Apple App Store badge | Hero + guide CTA (`.appstore-badge`) | Currently a **green custom button** ("Download on the App Store") to match the site's accent. Note: Apple's own guidelines require their official black/white badge for the real store link — swap this for the official localized badge before submitting, and don't recolor that one. |
-| Favicon / touch icon | `<head>` of all pages (not yet referenced) | Export from the app icon set (`AppIcon.appiconset`). |
+| `favicon.png` (64×64) + `app-icon.png` ✅ | `<head>` of all pages | In place — browser-tab favicon (a 64px downscale of the app icon) plus `apple-touch-icon`. Regenerate favicon after changing the icon: `sips -Z 64 app-icon.png --out favicon.png`. |
 | Social preview (`og-image.png`, 1200 × 630) | `<head>` meta (not yet referenced) | Optional but worth it: hero headline over the after-photos visual. |

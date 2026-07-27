@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>How to Save Snapchat Memories to Camera Roll (2026 Guide)</title>
   <meta name="description" content="Step-by-step: export all your Snapchat Memories, keep the dates and captions, and get everything into your camera roll. No app required to follow it.">
-  <!-- TODO: set real domain -->
-  <link rel="canonical" href="https://MEMORYRESTORE.EXAMPLE/guide/">
+  <!-- Canonical base = GitHub Pages URL. TODO: swap to the custom domain origin when live. -->
+  <link rel="canonical" href="https://ludvigappdeveloper.github.io/memories-site/guide/">
   <link rel="stylesheet" href="../styles.css">
   <link rel="icon" type="image/png" href="../public/images/favicon.png">
-  <link rel="apple-touch-icon" href="../public/images/app-icon.png">
+  <link rel="apple-touch-icon" href="../public/images/apple-touch-icon.png">
+
+  <!-- Open Graph / Twitter. TODO: replace og:image with a proper 1200×630 share image. -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to save your Snapchat Memories to your camera roll">
+  <meta property="og:description" content="Step-by-step: export all your Snapchat Memories, keep the dates and captions, and get everything into your camera roll. No app required to follow it.">
+  <meta property="og:url" content="https://ludvigappdeveloper.github.io/memories-site/guide/">
+  <meta property="og:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to save your Snapchat Memories to your camera roll">
+  <meta name="twitter:description" content="The whole export, tap by tap: keep the real dates and captions and get everything into your camera roll. No app required to follow it.">
+  <meta name="twitter:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -18,12 +30,22 @@
     "description": "Request your full Snapchat Memories export with the JSON files included, download every zip part, and restore dates, locations and captions to your photos.",
     "totalTime": "PT12H",
     "step": [
-      { "@type": "HowToStep", "name": "Open My Data in Snapchat", "text": "Tap your profile, open Settings (the gear, top-right), and scroll down to My Data. It also works in a browser at accounts.snapchat.com.", "image": "https://MEMORYRESTORE.EXAMPLE/public/images/guide-1-settings.jpg" },
-      { "@type": "HowToStep", "name": "Turn on Memories and JSON files", "text": "Switch on both Export your Memories and Export JSON Files — the JSON files carry each memory's date and location. Skip the big Request Only Memories button: that shortcut leaves the JSON files out, and the import needs them.", "image": "https://MEMORYRESTORE.EXAMPLE/public/images/guide-2-request.jpg" },
-      { "@type": "HowToStep", "name": "Pick a range, confirm email, submit", "text": "Choose how much to export — All Time gets everything — check the email address is yours, then tap Submit.", "image": "https://MEMORYRESTORE.EXAMPLE/public/images/guide-3-daterange.jpg" },
-      { "@type": "HowToStep", "name": "Let Snapchat build it", "text": "Your request shows as In progress. Snapchat emails you when it's ready — usually within a few hours. No email? Check your spam folder.", "image": "https://MEMORYRESTORE.EXAMPLE/public/images/guide-4-inprogress.jpg" },
-      { "@type": "HowToStep", "name": "Download every .zip", "text": "Back in My Data, open Your exports and download each mydata~….zip to your iPhone (save it to Files). You might have one zip or ten — a bigger library just means more parts. Grab them all; the links expire after a few days, so it's best done soon, on Wi-Fi.", "image": "https://MEMORYRESTORE.EXAMPLE/public/images/guide-5-downloads.jpg" },
-      { "@type": "HowToStep", "name": "Import them and restore dates, places and captions", "text": "Fix the metadata by hand from the memories_history.json file, or open all the zips in the app and import — dates, places and captions are restored on your device.", "image": "https://MEMORYRESTORE.EXAMPLE/public/images/guide-6-import.png" }
+      { "@type": "HowToStep", "name": "Open My Data in Snapchat", "text": "Tap your profile, open Settings (the gear, top-right), and scroll down to My Data. It also works in a browser at accounts.snapchat.com.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-1-settings.jpg" },
+      { "@type": "HowToStep", "name": "Turn on Memories and JSON files", "text": "Switch on both Export your Memories and Export JSON Files. The JSON files carry each memory's date and location. Skip the big Request Only Memories button: that shortcut leaves the JSON files out, and the import needs them.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-2-request.jpg" },
+      { "@type": "HowToStep", "name": "Pick a range, confirm email, submit", "text": "Choose how much to export (All Time gets everything), check the email address is yours, then tap Submit.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-3-daterange.jpg" },
+      { "@type": "HowToStep", "name": "Let Snapchat build it", "text": "Your request shows as In progress. Snapchat emails you when it's ready, usually within a few hours. No email? Check your spam folder.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-4-inprogress.jpg" },
+      { "@type": "HowToStep", "name": "Download every .zip", "text": "Back in My Data, open Your exports and download each mydata~….zip to your iPhone (save it to Files). You might have one zip or ten. A bigger library just means more parts. Grab them all; the links expire after a few days, so it's best done soon, on Wi-Fi.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-5-downloads.jpg" },
+      { "@type": "HowToStep", "name": "Import them and get your dates back", "text": "Open the zips in Memories: Save to Photos, pick what to import, and go. The real date, place and caption are restored to each memory, entirely on your device. Prefer to do it by hand? The manual method uses the same memories_history.json file.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-6-import.png" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ludvigappdeveloper.github.io/memories-site/" },
+      { "@type": "ListItem", "position": 2, "name": "Export guide", "item": "https://ludvigappdeveloper.github.io/memories-site/guide/" }
     ]
   }
   </script>
@@ -32,7 +54,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="wordmark" href="../"><img class="brand-logo" src="../public/images/app-icon.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
+    <a class="wordmark" href="../"><img class="brand-logo" src="../public/images/logo-96.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
     <nav class="site-nav" aria-label="Site">
       <a href="../guide/" aria-current="page">Export guide</a>
       <a href="../privacy/">Privacy</a>
@@ -51,14 +73,14 @@
       <div class="container prose">
         <p class="eyebrow">The complete export guide</p>
         <h1>How to save your Snapchat Memories to your camera roll</h1>
-        <p class="lede" style="font-size: 1.2rem; color: var(--ink-2); margin-top: var(--sp-l);">The whole path, tap by tap — how to export your Memories from Snapchat and bring them home. It works whether or not you ever install our app.</p>
+        <p class="lede" style="font-size: 1.2rem; color: var(--ink-2); margin-top: var(--sp-l);">The whole path, tap by tap: how to export your Memories from Snapchat and bring them home. It works whether or not you ever install our app.</p>
       </div>
     </header>
 
     <!-- Intro -->
     <div class="section-tight" style="padding-top: 0;">
       <div class="container prose">
-        <p>Snapchat Memories live in Snapchat, and only in Snapchat. There is no “select all, save to camera roll” button, and saving snaps one by one stops being an option somewhere around your fortieth memory. The real path is Snapchat’s official data export — it gets you everything at once, but it has two traps: one switch that silently decides whether your photos keep their dates, and a folder that arrives in scrambled pieces. The six steps below walk the whole thing, traps included.</p>
+        <p>Snapchat Memories live in Snapchat, and only in Snapchat. There is no “select all, save to camera roll” button, and saving snaps one by one stops being an option somewhere around your fortieth memory. The real path is Snapchat’s official data export. It gets you everything at once, but it has two traps: one switch that silently decides whether your photos keep their dates, and a folder that arrives in scrambled pieces. The six steps below walk the whole thing, traps included.</p>
       </div>
     </div>
 
@@ -77,7 +99,10 @@
               <p>Tap your profile, open <strong>Settings</strong> (the gear, top-right), and scroll down to <strong>My Data</strong>. It also works in a browser at <code>accounts.snapchat.com</code>.</p>
             </div>
             <figure class="walk-shot">
-              <img src="../public/images/guide-1-settings.jpg" alt="Snapchat's Settings screen with the My Data row highlighted." loading="lazy">
+              <picture>
+                <source srcset="../public/images/guide-1-settings.webp" type="image/webp">
+                <img src="../public/images/guide-1-settings.jpg" alt="Snapchat's Settings screen with the My Data row highlighted." width="1179" height="2414" loading="lazy">
+              </picture>
             </figure>
           </div>
 
@@ -85,11 +110,14 @@
             <div class="walk-copy">
               <span class="walk-num" aria-hidden="true">2</span>
               <h3>Turn on Memories and JSON files</h3>
-              <p>Switch on both <strong>Export your Memories</strong> and <strong>Export JSON Files</strong> — the JSON files carry each memory’s date and location.</p>
+              <p>Switch on both <strong>Export your Memories</strong> and <strong>Export JSON Files</strong>. The JSON files carry each memory’s date and location.</p>
               <p>Skip the big <strong>Request Only Memories</strong> button: that shortcut leaves the JSON files out, and the import needs them.</p>
             </div>
             <figure class="walk-shot">
-              <img src="../public/images/guide-2-request.jpg" alt="Snapchat's My Data request form with Export your Memories and Export JSON Files both switched on, and the Request Only Memories shortcut crossed out." loading="lazy">
+              <picture>
+                <source srcset="../public/images/guide-2-request.webp" type="image/webp">
+                <img src="../public/images/guide-2-request.jpg" alt="Snapchat's My Data request form with Export your Memories and Export JSON Files both switched on, and the Request Only Memories shortcut crossed out." width="1179" height="2379" loading="lazy">
+              </picture>
             </figure>
           </div>
 
@@ -97,10 +125,13 @@
             <div class="walk-copy">
               <span class="walk-num" aria-hidden="true">3</span>
               <h3>Pick a range, confirm email, submit</h3>
-              <p>Choose how much to export — <strong>All Time</strong> gets everything — check the email address is yours, then tap <strong>Submit</strong>.</p>
+              <p>Choose how much to export (<strong>All Time</strong> gets everything), check the email address is yours, then tap <strong>Submit</strong>.</p>
             </div>
             <figure class="walk-shot">
-              <img src="../public/images/guide-3-daterange.jpg" alt="Snapchat's export step with the range set to All Time, the email address confirmed, and the Submit button highlighted." loading="lazy">
+              <picture>
+                <source srcset="../public/images/guide-3-daterange.webp" type="image/webp">
+                <img src="../public/images/guide-3-daterange.jpg" alt="Snapchat's export step with the range set to All Time, the email address confirmed, and the Submit button highlighted." width="1179" height="2318" loading="lazy">
+              </picture>
             </figure>
           </div>
 
@@ -108,11 +139,14 @@
             <div class="walk-copy">
               <span class="walk-num" aria-hidden="true">4</span>
               <h3>Let Snapchat build it</h3>
-              <p>Your request shows as <strong>In progress</strong>. Snapchat emails you when it’s ready — usually within a few hours, though a very large library can take a day.</p>
+              <p>Your request shows as <strong>In progress</strong>. Snapchat emails you when it’s ready, usually within a few hours, though a very large library can take a day.</p>
               <p class="aside">No email? Check your spam folder, then check My Data → Your exports directly.</p>
             </div>
             <figure class="walk-shot">
-              <img src="../public/images/guide-4-inprogress.jpg" alt="Snapchat's Your exports panel showing an export marked In progress." loading="lazy">
+              <picture>
+                <source srcset="../public/images/guide-4-inprogress.webp" type="image/webp">
+                <img src="../public/images/guide-4-inprogress.jpg" alt="Snapchat's Your exports panel showing an export marked In progress." width="1179" height="442" loading="lazy">
+              </picture>
             </figure>
           </div>
 
@@ -120,11 +154,14 @@
             <div class="walk-copy">
               <span class="walk-num" aria-hidden="true">5</span>
               <h3>Download every .zip</h3>
-              <p>Back in <strong>My Data</strong>, open <strong>Your exports</strong> and download each <code>mydata~….zip</code> to your iPhone (save it to <strong>Files</strong>). You might have one zip or ten — a bigger library just means more parts.</p>
+              <p>Back in <strong>My Data</strong>, open <strong>Your exports</strong> and download each <code>mydata~….zip</code> to your iPhone (save it to <strong>Files</strong>). You might have one zip or ten. A bigger library just means more parts.</p>
               <p class="aside">Grab them all; the links expire after a few days, so it’s best done soon, on Wi-Fi.</p>
             </div>
             <figure class="walk-shot">
-              <img src="../public/images/guide-5-downloads.jpg" alt="Snapchat's ready export listing eight mydata zip parts, each with a Download button highlighted." loading="lazy">
+              <picture>
+                <source srcset="../public/images/guide-5-downloads.webp" type="image/webp">
+                <img src="../public/images/guide-5-downloads.jpg" alt="Snapchat's ready export listing eight mydata zip parts, each with a Download button highlighted." width="1179" height="1668" loading="lazy">
+              </picture>
             </figure>
           </div>
 
@@ -132,7 +169,7 @@
             <div class="walk-copy">
               <span class="walk-num" aria-hidden="true">6</span>
               <h3>Import them and get your dates back</h3>
-              <p>Open the zips in <strong>Memories: Save to Photos</strong>, pick what to import, and go — the real date, place and caption are restored to each memory, entirely on your device. (Prefer to do it by hand? The <a href="#manual">manual method</a> below uses the same <code>memories_history.json</code> file.)</p>
+              <p>Open the zips in <strong>Memories: Save to Photos</strong>, pick what to import, and go. The real date, place and caption are restored to each memory, entirely on your device. (Prefer to do it by hand? The <a href="#manual">manual method</a> below uses the same <code>memories_history.json</code> file.)</p>
             </div>
             <figure class="walk-shot">
               <!-- /public/images/guide-6-import.png -->
@@ -151,33 +188,34 @@
       <div class="container prose">
 
         <h2>Why do my exported Snapchat Memories have no dates?</h2>
-        <p>Because the dates were never in the photos. Snapchat stores each memory’s capture time and location in its own database, not in the image files — so the files in your export are stamped with the day the export was <em>made</em>, and their names are long randomised strings. Import them straight into your camera roll and five years of memories pile up on a single day.</p>
-        <p>The fix is the second switch from step 2. With <strong>Export JSON Files</strong> on, your export includes a file called <code>memories_history.json</code> — a plain-text record of every memory: the exact moment it was captured, and, where Snapchat knew it, the place. Anything that restores your dates — by hand or with an app — works from this file. If you already exported with the <strong>Request Only Memories</strong> shortcut, that button leaves the JSON out; just request the export again with both switches on. It costs nothing but another wait.</p>
+        <p>Because the dates were never in the photos. Snapchat stores each memory’s capture time and location in its own database, not in the image files, so the files in your export are stamped with the day the export was <em>made</em>, and their names are long randomised strings. Import them straight into your camera roll and five years of memories pile up on a single day.</p>
+        <p>The fix is the second switch from step 2. With <strong>Export JSON Files</strong> on, your export includes a file called <code>memories_history.json</code>, a plain-text record of every memory: the exact moment it was captured, and, where Snapchat knew it, the place. Anything that restores your dates, by hand or with an app, works from this file. If you already exported with the <strong>Request Only Memories</strong> shortcut, that button leaves the JSON out; just request the export again with both switches on. It costs nothing but another wait.</p>
 
         <h2>Where did the text on my snaps go?</h2>
-        <p>Captions, doodles and stickers arrive in the export as <em>separate</em> image files — transparent overlays split off from the photos and videos they were drawn on. Your snap of a sunset and the “last night of the trip 🥲” you wrote across it are two different files, and nothing in the folder tells you they belong together.</p>
-        <p>They can be recombined: each overlay composites exactly over its media file. Doing it manually means matching pairs by filename and layering them in an image editor — workable for ten memories, grim for two thousand. This is one of the two jobs <a href="../">the app</a> automates: it pairs every overlay with its snap and bakes it back in, photos and videos both.</p>
+        <p>Captions, doodles and stickers arrive in the export as <em>separate</em> image files: transparent overlays split off from the photos and videos they were drawn on. Your snap of a sunset and the “last night of the trip 🥲” you wrote across it are two different files, and nothing in the folder tells you they belong together.</p>
+        <p>They can be recombined: each overlay composites exactly over its media file. Doing it manually means matching pairs by filename and layering them in an image editor: workable for ten memories, grim for two thousand. This is one of the two jobs <a href="../">the app</a> automates: it pairs every overlay with its snap and bakes it back in, photos and videos both.</p>
 
         <h2 id="manual">How do I fix the dates manually?</h2>
-        <p>If you’re comfortable on a computer, you can do this yourself with free tools — this guide is useful to you either way. The recipe:</p>
+        <p>If you’re comfortable on a computer, you can do this yourself with free tools, and this guide is useful to you either way. The recipe:</p>
         <ol class="steps">
           <li>Unzip all the export parts into one folder on a computer.</li>
           <li>Open <code>memories_history.json</code> and note the structure: each entry has a <code>Date</code>, a media type, and a reference that ties it to a file in the folder.</li>
-          <li>Use a metadata tool such as <strong>ExifTool</strong> (free, command-line) to write each entry’s date into the matching file’s <code>DateTimeOriginal</code> field — people have published scripts for exactly this; search for “exiftool snapchat memories_history”.</li>
+          <li>Use a metadata tool such as <strong>ExifTool</strong> (free, command-line) to write each entry’s date into the matching file’s <code>DateTimeOriginal</code> field. People have published scripts for exactly this; search for “exiftool snapchat memories_history”.</li>
           <li>Import the folder into your photo app. With the capture dates written into the files, photos sort themselves into the right years.</li>
         </ol>
-        <p>What this doesn’t get you: locations on the map (also in the JSON, but fiddlier to write), overlays baked back in, and any comfort on an iPhone — the recipe really wants a computer. That gap is why the app exists: <a href="../">Memories: Save to Photos</a> does the dates, the places and the captions in one pass, on the phone, and the first 100 memories are free so you can check the result against this guide before paying anything.</p>
+        <p>What this doesn’t get you: locations on the map (also in the JSON, but fiddlier to write), overlays baked back in, and any comfort on an iPhone: the recipe really wants a computer. That gap is why the app exists: <a href="../">Memories: Save to Photos</a> does the dates, the places and the captions in one pass, on the phone, and the first 100 memories are free so you can check the result against this guide before paying anything.</p>
 
         <h2>When is Snapchat deleting Memories?</h2>
-        <p>In late 2025 Snapchat announced that Memories are no longer unlimited: free accounts keep a set amount of storage (5&nbsp;GB at the announcement), and anything beyond that requires a paid storage plan. Snapchat has said over-limit memories are kept in temporary storage for a grace period — but the era of “it’ll just be there forever, free” is over, and terms like these can change again.</p>
+        <p>In late 2025 Snapchat announced that Memories are no longer unlimited: free accounts keep a set amount of storage (5&nbsp;GB at the announcement), and anything beyond that requires a paid storage plan. Snapchat has said over-limit memories are kept in temporary storage for a grace period, but the era of “it’ll just be there forever, free” is over, and terms like these can change again.</p>
         <p>You don’t need to panic, and this page won’t pretend you should. But the honest conclusion is: the only copy of your memories that is unconditionally yours is the one in your own photo library. The export takes an evening. It’s worth the evening.</p>
+        <p>For the full picture of the storage cap and what to do about it, see <a href="../guides/snapchat-5gb-storage-limit-what-to-do/">Snapchat’s 5GB Memories limit</a>. Or, if you’re deciding between paying Snapchat and keeping your own copy, see the <a href="../compare/">three options compared</a>.</p>
 
         <h2>How do I sort the memories once I have them?</h2>
-        <p>If you’ve restored the dates (by hand or with the app), sorting is free: your photo library orders everything by capture date, so the memories interleave with your camera photos, show up in your year views and in “On this day”, and — where locations were restored — appear on the map. There is nothing else to organise. That’s the point of fixing the metadata rather than fixing folders: the library you already use becomes the archive.</p>
+        <p>If you’ve restored the dates (by hand or with the app), sorting is free: your photo library orders everything by capture date, so the memories interleave with your camera photos, show up in your year views and in “On this day”, and, where locations were restored, appear on the map. There is nothing else to organise. That’s the point of fixing the metadata rather than fixing folders: the library you already use becomes the archive.</p>
         <p>With <a href="../">the app</a> the import itself is also built for large libraries: you select what to import by month rather than photo by photo, multiple zip parts are treated as one export, and a paused or interrupted import resumes without duplicating anything.</p>
 
         <h2>One switch so you never do this again</h2>
-        <p>The export covers your past. For everything from today on, flip one setting in Snapchat: <strong>Settings → Memories → Save Destinations → Memories &amp; Camera Roll</strong>. Every snap you save from then on lands in your photo library at the same time. Your history still needs the export — but only once.</p>
+        <p>The export covers your past. For everything from today on, flip one setting in Snapchat: <strong>Settings → Memories → Save Destinations → Memories &amp; Camera Roll</strong>. Every snap you save from then on lands in your photo library at the same time. Your history still needs the export, but only once.</p>
 
       </div>
     </div>
@@ -187,7 +225,7 @@
       <div class="container prose">
         <aside class="card card-accent">
           <h2 style="font-size: var(--fs-h3); margin: 0 0 var(--sp-m);">Got your zip files? The rest takes minutes.</h2>
-          <p style="color: var(--ink-2); margin-bottom: var(--sp-xl);">Open them in the app and your memories come back with their dates, places and captions — entirely on your iPhone. First 100 free, then one payment. <a href="../privacy/">Nothing is uploaded</a>.</p>
+          <p style="color: var(--ink-2); margin-bottom: var(--sp-xl);">Open them in the app and your memories come back with their dates, places and captions, entirely on your iPhone. First 100 free, then one payment. <a href="../privacy/">Nothing is uploaded</a>.</p>
           <!-- TODO: replace href with real App Store URL, and this placeholder with Apple's official badge SVG -->
           <a class="appstore-badge" href="https://apps.apple.com/app/idXXXXXXXXXX">
             <span class="pre">Download on the</span>
@@ -209,6 +247,9 @@
         <span class="head">Memories: Save to Photos</span>
         <a href="../">Home</a>
         <a href="../guide/">Export guide</a>
+        <a href="../guides/snapchat-5gb-storage-limit-what-to-do/">Snapchat’s 5GB limit</a>
+        <a href="../compare/">Options compared</a>
+        <a href="../about/">About</a>
       </nav>
       <nav aria-label="Legal">
         <span class="head">Legal</span>

@@ -3,19 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms of Use — Memories: Save to Photos</title>
+  <title>Terms of Use | Memories: Save to Photos</title>
   <meta name="description" content="The terms for Memories: Save to Photos, in plain words: the app is yours to use, your content stays yours, one payment and no subscription.">
-  <!-- TODO: set real domain -->
-  <link rel="canonical" href="https://MEMORYRESTORE.EXAMPLE/terms/">
+  <!-- Canonical base = GitHub Pages URL. TODO: swap to the custom domain origin when live. -->
+  <link rel="canonical" href="https://ludvigappdeveloper.github.io/memories-site/terms/">
   <link rel="stylesheet" href="../styles.css">
   <link rel="icon" type="image/png" href="../public/images/favicon.png">
-  <link rel="apple-touch-icon" href="../public/images/app-icon.png">
+  <link rel="apple-touch-icon" href="../public/images/apple-touch-icon.png">
+
+  <!-- Open Graph / Twitter. TODO: replace og:image with a proper 1200×630 share image. -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Terms of Use | Memories: Save to Photos">
+  <meta property="og:description" content="The terms for Memories: Save to Photos, in plain words: the app is yours to use, your content stays yours, one payment and no subscription.">
+  <meta property="og:url" content="https://ludvigappdeveloper.github.io/memories-site/terms/">
+  <meta property="og:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Terms of Use | Memories: Save to Photos">
+  <meta name="twitter:description" content="In plain words: the app is yours to use, your content stays yours, one payment and no subscription.">
+  <meta name="twitter:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ludvigappdeveloper.github.io/memories-site/" },
+      { "@type": "ListItem", "position": 2, "name": "Terms of use", "item": "https://ludvigappdeveloper.github.io/memories-site/terms/" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a class="wordmark" href="../"><img class="brand-logo" src="../public/images/app-icon.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
+    <a class="wordmark" href="../"><img class="brand-logo" src="../public/images/logo-96.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
     <nav class="site-nav" aria-label="Site">
       <a href="../guide/">Export guide</a>
       <a href="../privacy/">Privacy</a>
@@ -38,10 +60,10 @@
     <p>By using Memories: Save to Photos you agree to these terms and to Apple’s standard <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a>, which governs every app on the App Store. The app is licensed to you for personal use on Apple devices you own or control.</p>
 
     <h2>Your content is yours</h2>
-    <p>You keep every right to the photos and videos you import — the app claims none of them. In return, you’re responsible for only importing files you have the right to use, which for an export of your own account you naturally do.</p>
+    <p>You keep every right to the photos and videos you import. The app claims none of them. In return, you’re responsible for only importing files you have the right to use, which for an export of your own account you naturally do.</p>
 
     <h2>One purchase, no subscription</h2>
-    <p>The free tier includes a limited number of imports. A single one-time purchase unlocks unlimited imports — there is no subscription and no recurring charge. Payment is handled by Apple, and refunds follow Apple’s App Store policies.</p>
+    <p>The free tier includes a limited number of imports. A single one-time purchase unlocks unlimited imports, with no subscription and no recurring charge. Payment is handled by Apple, and refunds follow Apple’s App Store policies.</p>
 
     <h2>Keep your export safe</h2>
     <p>The app takes real care when writing to your photo library, and never deletes anything you didn’t explicitly undo. Even so, software isn’t perfect and exports vary: keep your original export archive until you’ve checked that your memories arrived the way you expect.</p>
@@ -69,6 +91,7 @@
         <span class="head">Memories: Save to Photos</span>
         <a href="../">Home</a>
         <a href="../guide/">Export guide</a>
+        <a href="../about/">About</a>
       </nav>
       <nav aria-label="Legal">
         <span class="head">Legal</span>

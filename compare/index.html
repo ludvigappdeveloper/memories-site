@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keep Snapchat Memories: Snapchat Plan vs App vs Manual</title>
+  <meta name="description" content="Three ways to keep your Snapchat Memories: Snapchat's recurring storage fee, export and sort by hand, or a one-time on-device app. Cost and ownership compared.">
+  <!-- Canonical base = GitHub Pages URL. TODO: swap to the custom domain origin when live. -->
+  <link rel="canonical" href="https://ludvigappdeveloper.github.io/memories-site/compare/">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" href="../public/images/favicon.png">
+  <link rel="apple-touch-icon" href="../public/images/apple-touch-icon.png">
+
+  <!-- Open Graph / Twitter. TODO: replace og:image with a proper 1200×630 share image. -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Keeping your Snapchat Memories: your three real options">
+  <meta property="og:description" content="Pay Snapchat's recurring storage fee, export and sort by hand, or a one-time on-device app. An honest side-by-side of cost, ownership and effort.">
+  <meta property="og:url" content="https://ludvigappdeveloper.github.io/memories-site/compare/">
+  <meta property="og:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Keeping your Snapchat Memories: your three real options">
+  <meta name="twitter:description" content="Pay Snapchat's recurring fee, do it by hand, or a one-time on-device app. Cost, ownership and effort compared.">
+  <meta name="twitter:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is it cheaper to pay Snapchat or use an app to keep my Memories?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Over time, a one-time purchase is cheaper than a recurring fee. Snapchat's storage plan is billed on repeat and keeps your memories on Snapchat's servers only for as long as you keep paying. A one-time app is paid once and puts the memories in your own photo library, where there is nothing left to pay and nothing left to lose if you cancel anything. If you never mind paying monthly and want everything to stay inside Snapchat, the plan is the simplest path; if you want the bill to end, moving a copy to your phone does that." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I keep my Snapchat Memories for free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, the official export is free, and so is restoring the dates by hand. Request your data from Snapchat, download the zip files, unzip them on a computer, and use a free tool like ExifTool to write each memory's real date back from the memories_history.json file. The only cost is your time, and for a small library that trade is fine. It gets tedious fast for a large one, which is the gap the app fills." }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between Snapchat's storage plan and saving to my phone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A storage plan rents space on Snapchat's servers; saving to your phone gives you an unconditional copy. With the plan, your memories stay in Snapchat and stay only while you keep paying. Saved to your own photo library, they sit alongside your camera photos with their real dates and places, work offline, and stay yours whatever Snapchat charges or changes later. The two aren't mutually exclusive: you can keep using Snapchat and still hold your own copy." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not just export and sort my Memories myself?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You can, and for a small library it's a fine afternoon. The manual route means unzipping every export part on a computer, matching each file to its entry in memories_history.json, writing the date back with a metadata tool, and recombining caption overlays with their photos by hand. That's workable for a few dozen memories and grim for a few thousand; the app automates exactly those steps on the phone, and the first 100 are free so you can compare the result before paying." }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ludvigappdeveloper.github.io/memories-site/" },
+      { "@type": "ListItem", "position": 2, "name": "Options compared", "item": "https://ludvigappdeveloper.github.io/memories-site/compare/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="../"><img class="brand-logo" src="../public/images/logo-96.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../guide/">Export guide</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <!-- TODO: replace href with real App Store URL -->
+      <a class="btn-nav" href="https://apps.apple.com/app/idXXXXXXXXXX">Download now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+
+    <!-- Hero -->
+    <header class="section-tight">
+      <div class="container prose">
+        <p class="micro" style="margin-bottom: var(--sp-l);"><a href="../">Home</a> › Options compared</p>
+        <p class="eyebrow">Options compared</p>
+        <h1>Keeping your Snapchat Memories: your three real options</h1>
+        <p class="lede" style="font-size: 1.2rem; color: var(--ink-2); margin-top: var(--sp-l);">Now that free Memories storage is capped, there are three honest ways to hold onto your photos and videos: pay Snapchat to keep them, do the export and sorting by hand, or let an app do it once. Here’s the trade-off, without the sales pitch.</p>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="section-tight" style="padding-top: 0;">
+      <div class="container prose">
+        <p>They aren’t all the same kind of choice. Paying Snapchat keeps your memories exactly where they are and asks for a fee on repeat. The other two move a copy into your own photo library, where there’s nothing left to pay: one does it with your own effort, the other automates it. None of them is wrong; the right one depends on how big your library is and whether you want the bill to end.</p>
+      </div>
+    </div>
+
+    <!-- Comparison table -->
+    <div class="section-tight section-band">
+      <div class="container">
+        <p class="eyebrow">At a glance</p>
+        <h2 style="max-width: 18em;">Pay Snapchat, do it by hand, or use the app</h2>
+        <div class="cmp-wrap">
+          <table class="cmp">
+            <caption>All three keep your memories; they differ on cost, ownership and effort.</caption>
+            <colgroup><col><col><col><col class="col-app"></colgroup>
+            <thead>
+              <tr>
+                <th scope="col">How they compare</th>
+                <th scope="col">Snapchat storage plan</th>
+                <th scope="col">Do it by hand</th>
+                <th scope="col" class="is-app">Memories: Save to Photos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Cost</th>
+                <td>Recurring fee, billed on repeat</td>
+                <td>Free (your time)</td>
+                <td>One payment (79&nbsp;kr), first 100 free</td>
+              </tr>
+              <tr>
+                <th scope="row">Where your memories live</th>
+                <td>On Snapchat’s servers</td>
+                <td>In your own photo library</td>
+                <td>In your own photo library</td>
+              </tr>
+              <tr>
+                <th scope="row">Kept if you stop paying</th>
+                <td>No, tied to the plan</td>
+                <td>Yes, the copy is yours</td>
+                <td>Yes, the copy is yours</td>
+              </tr>
+              <tr>
+                <th scope="row">Real dates &amp; locations</th>
+                <td>Stay inside the app only</td>
+                <td>Only if you write them back with ExifTool yourself</td>
+                <td>Restored automatically from the export</td>
+              </tr>
+              <tr>
+                <th scope="row">Captions &amp; drawings</th>
+                <td>Kept inside Snapchat</td>
+                <td>Arrive as separate overlay files you recombine by hand</td>
+                <td>Baked back onto each photo and video</td>
+              </tr>
+              <tr>
+                <th scope="row">Large libraries</th>
+                <td>Handled, for a fee</td>
+                <td>Tedious; manual save caps at ~100 at a time</td>
+                <td>Multi-zip exports as one, import by month, resumable</td>
+              </tr>
+              <tr>
+                <th scope="row">Where the work happens</th>
+                <td>Snapchat’s cloud</td>
+                <td>On a computer</td>
+                <td>On your iPhone, nothing uploaded</td>
+              </tr>
+              <tr>
+                <th scope="row">Best for</th>
+                <td>Staying inside Snapchat, don’t mind a recurring bill</td>
+                <td>Small libraries, comfortable on a computer</td>
+                <td>Getting everything into your own library without the grind</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="micro">Snapchat’s plan pricing is set by Snapchat and shown in the app; figures here describe the kind of cost, not an exact amount. The app price is shown in your local currency on the App&nbsp;Store.</p>
+      </div>
+    </div>
+
+    <!-- Q&A -->
+    <div class="section-tight">
+      <div class="container prose">
+
+        <h2>Is it cheaper to pay Snapchat or use an app to keep my Memories?</h2>
+        <p>Over time, a one-time purchase is cheaper than a recurring fee. Snapchat’s storage plan is billed on repeat and keeps your memories on Snapchat’s servers only for as long as you keep paying. A one-time app is paid once and puts the memories in your own photo library, where there is nothing left to pay and nothing left to lose if you cancel anything. If you never mind paying monthly and want everything to stay inside Snapchat, the plan is the simplest path; if you want the bill to end, moving a copy to your phone does that.</p>
+
+        <h2>Can I keep my Snapchat Memories for free?</h2>
+        <p>Yes, the official export is free, and so is restoring the dates by hand. Request your data from Snapchat, download the zip files, unzip them on a computer, and use a free tool like ExifTool to write each memory’s real date back from the <code>memories_history.json</code> file. The only cost is your time, and for a small library that trade is fine. It gets tedious fast for a large one, which is the gap the app fills.</p>
+        <p>The full free method (switches to turn on, the file to read, the tool to use) is written out in the <a href="../guide/#manual">export guide</a>.</p>
+
+        <h2>What’s the difference between Snapchat’s storage plan and saving to my phone?</h2>
+        <p>A storage plan rents space on Snapchat’s servers; saving to your phone gives you an unconditional copy. With the plan, your memories stay in Snapchat and stay only while you keep paying. Saved to your own photo library, they sit alongside your camera photos with their real dates and places, work offline, and stay yours whatever Snapchat charges or changes later. The two aren’t mutually exclusive: you can keep using Snapchat and still hold your own copy.</p>
+        <p>If the storage limit is what brought you here, the <a href="../guides/snapchat-5gb-storage-limit-what-to-do/">5GB limit page</a> explains exactly what’s changed and what happens to over-limit memories.</p>
+
+        <h2>Why not just export and sort my Memories myself?</h2>
+        <p>You can, and for a small library it’s a fine afternoon. The manual route means unzipping every export part on a computer, matching each file to its entry in <code>memories_history.json</code>, writing the date back with a metadata tool, and recombining caption overlays with their photos by hand. That’s workable for a few dozen memories and grim for a few thousand; the app automates exactly those steps on the phone, and the first 100 are free so you can compare the result before paying.</p>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="section-tight">
+      <div class="container prose">
+        <aside class="card card-accent">
+          <h2 style="font-size: var(--fs-h3); margin: 0 0 var(--sp-m);">Want the copy that’s unconditionally yours?</h2>
+          <p style="color: var(--ink-2); margin-bottom: var(--sp-xl);">Memories: Save to Photos restores the real dates, places and captions and drops everything into your own photo library, all on your iPhone, nothing uploaded. First 100 free, then one payment, no subscription.</p>
+          <!-- TODO: replace href with real App Store URL, and this placeholder with Apple's official badge SVG -->
+          <a class="appstore-badge" href="https://apps.apple.com/app/idXXXXXXXXXX">
+            <span class="pre">Download on the</span>
+            <span class="name">App Store</span>
+          </a>
+          <p class="micro" style="margin-top: var(--sp-l);">Prefer the free route first? The <a href="../guide/">export guide</a> walks the whole thing, app or no app.</p>
+        </aside>
+        <p class="micro" style="margin-top: var(--sp-xxl);">Storage details reflect Snapchat’s late-2025 announcement and may change; check Snapchat for current terms and pricing. Memories: Save to Photos is not affiliated with, endorsed by, or sponsored by Snap&nbsp;Inc.</p>
+      </div>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <nav aria-label="Pages">
+        <span class="head">Memories: Save to Photos</span>
+        <a href="../">Home</a>
+        <a href="../guide/">Export guide</a>
+        <a href="../compare/">Options compared</a>
+        <a href="../about/">About</a>
+      </nav>
+      <nav aria-label="Legal">
+        <span class="head">Legal</span>
+        <a href="../privacy/">Privacy policy</a>
+        <a href="../terms/">Terms of use</a>
+      </nav>
+      <nav aria-label="Support">
+        <span class="head">Support</span>
+        <!-- TODO: confirm support email -->
+        <a href="mailto:ludvig.appdeveloper@gmail.com">ludvig.appdeveloper@gmail.com</a>
+      </nav>
+    </div>
+    <p class="legal-line">Memories: Save to Photos is not affiliated with, endorsed by, or sponsored by Snap&nbsp;Inc. Snapchat is a trademark of Snap&nbsp;Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>

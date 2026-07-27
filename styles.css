@@ -326,6 +326,22 @@ h3 { font-size: var(--fs-h3); line-height: 1.3; }
 .ph .ph-label { font-family: var(--mono); font-size: 0.72rem; line-height: 1.7; color: var(--ink-2); overflow-wrap: anywhere; }
 .ph .ph-label strong { display: block; color: var(--ink); font-weight: 600; }
 
+/* ---------- Comparison table (compare page) ---------- */
+
+/* Scrolls inside its own box on narrow screens so the page body never scrolls sideways. */
+.cmp-wrap { overflow-x: auto; margin-block: clamp(28px, 4vw, 44px); border: 1px solid var(--hairline); border-radius: var(--r-card); background: var(--surface); }
+.cmp { border-collapse: collapse; width: 100%; min-width: 560px; font-size: var(--fs-small); }
+.cmp caption { text-align: left; padding: var(--sp-l) var(--sp-l) 0; color: var(--ink-3); font-size: var(--fs-micro); }
+.cmp th, .cmp td { text-align: left; padding: var(--sp-m) var(--sp-l); border-bottom: 1px solid var(--hairline); vertical-align: top; }
+.cmp thead th { font-family: var(--serif); font-weight: 600; font-size: var(--fs-body); color: var(--ink); }
+.cmp thead th:first-child { color: var(--ink-3); font-family: var(--sans); font-weight: 650; font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: 0.1em; }
+/* Highlight the app column so the recommended path reads at a glance. */
+.cmp thead th.is-app { color: var(--accent); }
+.cmp tbody th { font-weight: 650; color: var(--ink); font-family: var(--sans); }
+.cmp td { color: var(--ink-2); }
+.cmp col.col-app { background: var(--accent-soft); }
+.cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: none; }
+
 /* ---------- Footer ---------- */
 
 .site-footer { border-top: 1px solid var(--hairline); padding-block: var(--sp-xxxl); font-size: var(--fs-small); color: var(--ink-2); }

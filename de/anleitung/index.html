@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snapchat-Erinnerungen in die Aufnahmen speichern (2026)</title>
+  <meta name="description" content="Schritt für Schritt: exportiere alle deine Snapchat-Memorys, behalte Datum und Texte, und hol alles in deine Aufnahmen. Keine App nötig, um der Anleitung zu folgen.">
+  <link rel="canonical" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/">
+  <link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guide/">
+  <link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guide/">
+  <link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/">
+  <link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guia/">
+  <link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guide/">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" type="image/png" href="../../public/images/favicon.png">
+  <link rel="apple-touch-icon" href="../../public/images/apple-touch-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Wie du deine Snapchat-Erinnerungen in deine Aufnahmen speicherst">
+  <meta property="og:description" content="Schritt für Schritt: exportiere alle deine Snapchat-Memorys, behalte Datum und Texte, und hol alles in deine Aufnahmen. Keine App nötig, um der Anleitung zu folgen.">
+  <meta property="og:url" content="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/">
+  <meta property="og:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wie du deine Snapchat-Erinnerungen in deine Aufnahmen speicherst">
+  <meta name="twitter:description" content="Der ganze Export, Schritt für Schritt: behalte das echte Datum und die Texte und hol alles in deine Aufnahmen. Keine App nötig, um der Anleitung zu folgen.">
+  <meta name="twitter:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "inLanguage": "de",
+    "name": "Wie du alle deine Snapchat-Erinnerungen in deine Aufnahmen speicherst",
+    "description": "Fordere den vollständigen Export deiner Snapchat-Memorys mit den JSON-Dateien an, lade jeden Zip-Teil herunter, und stelle Datum, Orte und Texte auf deinen Fotos wieder her.",
+    "totalTime": "PT12H",
+    "step": [
+      { "@type": "HowToStep", "name": "Meine Daten in Snapchat öffnen", "text": "Tippe auf dein Profil, öffne Einstellungen (das Zahnrad oben rechts) und scrolle nach unten zu Meine Daten. Das geht auch im Browser unter accounts.snapchat.com.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-1-settings.jpg" },
+      { "@type": "HowToStep", "name": "Memorys und JSON-Dateien aktivieren", "text": "Aktiviere sowohl Deine Memorys exportieren als auch JSON-Dateien exportieren. Die JSON-Dateien enthalten Datum und Ort jeder Erinnerung. Überspringe den großen Button Nur Memorys anfordern: Diese Abkürzung lässt die JSON-Dateien weg, und der Import braucht sie.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-2-request.jpg" },
+      { "@type": "HowToStep", "name": "Zeitraum wählen, E-Mail bestätigen, senden", "text": "Wähle den Zeitraum, den du exportieren willst (Immer holt alles), prüfe, dass die E-Mail-Adresse dir gehört, und tippe dann auf Senden.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-3-daterange.jpg" },
+      { "@type": "HowToStep", "name": "Snapchat erstellt ihn", "text": "Deine Anfrage wird als In Bearbeitung angezeigt. Snapchat schickt dir eine E-Mail, wenn es fertig ist, meist innerhalb weniger Stunden. Keine E-Mail? Sieh im Spam-Ordner nach.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-4-inprogress.jpg" },
+      { "@type": "HowToStep", "name": "Jede .zip herunterladen", "text": "Zurück in Meine Daten öffnest du Deine Exporte und lädst jede mydata~….zip auf dein iPhone herunter (speichere sie in Dateien). Vielleicht hast du eine Zip oder zehn. Eine größere Sammlung bedeutet einfach mehr Teile. Lade alle herunter; die Links laufen nach ein paar Tagen ab, mach es also am besten bald und per WLAN.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-5-downloads.jpg" },
+      { "@type": "HowToStep", "name": "Importieren und Datum zurückholen", "text": "Öffne die Zips in Memories: Save to Photos, wähle aus, was du importierst, und los. Das echte Datum, der Ort und der Text werden auf jeder Erinnerung wiederhergestellt, komplett auf deinem Gerät. Lieber von Hand? Die manuelle Methode nutzt dieselbe memories_history.json-Datei.", "image": "https://ludvigappdeveloper.github.io/memories-site/public/images/guide-6-import.png" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://ludvigappdeveloper.github.io/memories-site/de/" },
+      { "@type": "ListItem", "position": 2, "name": "Export-Anleitung", "item": "https://ludvigappdeveloper.github.io/memories-site/de/anleitung/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="../"><img class="brand-logo" src="../../public/images/logo-96.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../anleitung/" aria-current="page">Export-Anleitung</a>
+      <a href="../datenschutz/">Datenschutz</a>
+      <a href="../nutzungsbedingungen/">Bedingungen</a>
+      <!-- TODO: echte App-Store-URL eintragen -->
+      <a class="btn-nav" href="https://apps.apple.com/app/idXXXXXXXXXX">Herunterladen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+
+    <!-- Hero -->
+    <header class="section-tight">
+      <div class="container prose">
+        <p class="eyebrow">Die vollständige Export-Anleitung</p>
+        <h1>Wie du deine Snapchat-Erinnerungen in deine Aufnahmen speicherst</h1>
+        <p class="lede" style="font-size: 1.2rem; color: var(--ink-2); margin-top: var(--sp-l);">Der ganze Weg, Schritt für Schritt: wie du deine Memorys aus Snapchat exportierst und nach Hause holst. Es funktioniert, ob du unsere App installierst oder nicht.</p>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="section-tight" style="padding-top: 0;">
+      <div class="container prose">
+        <p>Snapchat-Memorys leben in Snapchat, und nur in Snapchat. Es gibt keinen „alles auswählen, in die Aufnahmen speichern"-Button, und Snaps einzeln zu speichern hört ungefähr bei der vierzigsten Erinnerung auf, eine Option zu sein. Der echte Weg ist Snapchats offizieller Datenexport. Er gibt dir alles auf einmal, aber er hat zwei Fallen: einen Schalter, der stillschweigend entscheidet, ob deine Fotos ihr Datum behalten, und einen Ordner, der in durcheinandergewürfelten Teilen ankommt. Die sechs Schritte unten gehen das Ganze durch, Fallen inklusive.</p>
+      </div>
+    </div>
+
+    <!-- The walkthrough -->
+    <section class="section-tight section-band">
+      <div class="container">
+        <p class="eyebrow">Schritt für Schritt</p>
+        <h2 style="max-width: 16em;">Deine Memorys exportieren, von Anfang bis Ende</h2>
+
+        <div class="walk">
+
+          <div class="walk-step">
+            <div class="walk-copy">
+              <span class="walk-num" aria-hidden="true">1</span>
+              <h3>Meine Daten in Snapchat öffnen</h3>
+              <p>Tippe auf dein Profil, öffne <strong>Einstellungen</strong> (das Zahnrad oben rechts) und scrolle nach unten zu <strong>Meine Daten</strong>. Das geht auch im Browser unter <code>accounts.snapchat.com</code>.</p>
+            </div>
+            <figure class="walk-shot">
+              <picture>
+                <source srcset="../../public/images/guide-1-settings.webp" type="image/webp">
+                <img src="../../public/images/guide-1-settings.jpg" alt="Der Einstellungen-Bildschirm von Snapchat mit hervorgehobener Zeile Meine Daten." width="1179" height="2414" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="walk-step">
+            <div class="walk-copy">
+              <span class="walk-num" aria-hidden="true">2</span>
+              <h3>Memorys und JSON-Dateien aktivieren</h3>
+              <p>Aktiviere sowohl <strong>Deine Memorys exportieren</strong> als auch <strong>JSON-Dateien exportieren</strong>. Die JSON-Dateien enthalten Datum und Ort jeder Erinnerung.</p>
+              <p>Überspringe den großen Button <strong>Nur Memorys anfordern</strong>: Diese Abkürzung lässt die JSON-Dateien weg, und der Import braucht sie.</p>
+            </div>
+            <figure class="walk-shot">
+              <picture>
+                <source srcset="../../public/images/guide-2-request.webp" type="image/webp">
+                <img src="../../public/images/guide-2-request.jpg" alt="Das Meine-Daten-Anfrageformular von Snapchat mit aktiviertem Deine Memorys exportieren und JSON-Dateien exportieren, und durchgestrichener Abkürzung Nur Memorys anfordern." width="1179" height="2379" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="walk-step">
+            <div class="walk-copy">
+              <span class="walk-num" aria-hidden="true">3</span>
+              <h3>Zeitraum wählen, E-Mail bestätigen, senden</h3>
+              <p>Wähle den Zeitraum, den du exportieren willst (<strong>Immer</strong> holt alles), prüfe, dass die E-Mail-Adresse dir gehört, und tippe dann auf <strong>Senden</strong>.</p>
+            </div>
+            <figure class="walk-shot">
+              <picture>
+                <source srcset="../../public/images/guide-3-daterange.webp" type="image/webp">
+                <img src="../../public/images/guide-3-daterange.jpg" alt="Der Export-Schritt von Snapchat mit dem Zeitraum auf Immer gestellt, bestätigter E-Mail-Adresse und hervorgehobenem Senden-Button." width="1179" height="2318" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="walk-step">
+            <div class="walk-copy">
+              <span class="walk-num" aria-hidden="true">4</span>
+              <h3>Snapchat erstellt ihn</h3>
+              <p>Deine Anfrage wird als <strong>In Bearbeitung</strong> angezeigt. Snapchat schickt dir eine E-Mail, wenn es fertig ist, meist innerhalb weniger Stunden, eine sehr große Sammlung kann aber einen Tag dauern.</p>
+              <p class="aside">Keine E-Mail? Sieh im Spam-Ordner nach, dann direkt unter Meine Daten → Deine Exporte.</p>
+            </div>
+            <figure class="walk-shot">
+              <picture>
+                <source srcset="../../public/images/guide-4-inprogress.webp" type="image/webp">
+                <img src="../../public/images/guide-4-inprogress.jpg" alt="Das Panel Deine Exporte von Snapchat mit einem als In Bearbeitung markierten Export." width="1179" height="442" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="walk-step">
+            <div class="walk-copy">
+              <span class="walk-num" aria-hidden="true">5</span>
+              <h3>Jede .zip herunterladen</h3>
+              <p>Zurück in <strong>Meine Daten</strong> öffnest du <strong>Deine Exporte</strong> und lädst jede <code>mydata~….zip</code> auf dein iPhone herunter (speichere sie in <strong>Dateien</strong>). Vielleicht hast du eine Zip oder zehn. Eine größere Sammlung bedeutet einfach mehr Teile.</p>
+              <p class="aside">Lade alle herunter; die Links laufen nach ein paar Tagen ab, mach es also am besten bald und per WLAN.</p>
+            </div>
+            <figure class="walk-shot">
+              <picture>
+                <source srcset="../../public/images/guide-5-downloads.webp" type="image/webp">
+                <img src="../../public/images/guide-5-downloads.jpg" alt="Der fertige Snapchat-Export listet acht mydata-Zip-Teile, jeder mit einem hervorgehobenen Herunterladen-Button." width="1179" height="1668" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="walk-step">
+            <div class="walk-copy">
+              <span class="walk-num" aria-hidden="true">6</span>
+              <h3>Importieren und Datum zurückholen</h3>
+              <p>Öffne die Zips in <strong>Memories: Save to Photos</strong>, wähle aus, was du importierst, und los. Das echte Datum, der Ort und der Text werden auf jeder Erinnerung wiederhergestellt, komplett auf deinem Gerät. (Lieber von Hand? Die <a href="#manual">manuelle Methode</a> unten nutzt dieselbe <code>memories_history.json</code>-Datei.)</p>
+            </div>
+            <figure class="walk-shot">
+              <!-- /public/images/guide-6-import.png -->
+              <div class="ph ph-phone" role="img" aria-label="Der Import-Bildschirm der App mit geladenem Export und nach Monat gruppierten Erinnerungen.">
+                <span class="ph-label"><strong>guide-6-import.png</strong>1290 × 2796<br>Der Import-Bildschirm der App: der Export geladen, Erinnerungen nach Monat gruppiert.</span>
+              </div>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Deeper reading / SEO Q&A -->
+    <div class="section-tight">
+      <div class="container prose">
+
+        <h2>Warum haben meine exportierten Snapchat-Erinnerungen kein Datum?</h2>
+        <p>Weil das Datum nie in den Fotos war. Snapchat speichert Aufnahmezeit und Ort jeder Erinnerung in seiner eigenen Datenbank, nicht in den Bilddateien. Die Dateien in deinem Export tragen also das Datum des Tages, an dem der Export <em>erstellt</em> wurde, und haben lange, zufällige Namen. Importiere sie direkt in deine Aufnahmen, und fünf Jahre Erinnerungen stapeln sich auf einem einzigen Tag.</p>
+        <p>Die Lösung ist der zweite Schalter aus Schritt 2. Mit aktiviertem <strong>JSON-Dateien exportieren</strong> enthält dein Export eine Datei namens <code>memories_history.json</code>, eine Klartext-Aufzeichnung jeder Erinnerung: der genaue Moment der Aufnahme und, wo Snapchat ihn kannte, der Ort. Alles, was dein Datum wiederherstellt, von Hand oder mit einer App, arbeitet mit dieser Datei. Wenn du bereits mit der Abkürzung <strong>Nur Memorys anfordern</strong> exportiert hast, lässt dieser Button das JSON weg; fordere den Export einfach erneut mit beiden Schaltern an. Das kostet nichts außer etwas Wartezeit.</p>
+
+        <h2>Wo ist der Text auf meinen Snaps geblieben?</h2>
+        <p>Texte, Kritzeleien und Sticker kommen im Export als <em>separate</em> Bilddateien an: transparente Overlays, abgetrennt von den Fotos und Videos, auf die sie gezeichnet wurden. Dein Snap von einem Sonnenuntergang und das „letzter Abend der Reise 🥲", das du darüber geschrieben hast, sind zwei verschiedene Dateien, und nichts im Ordner sagt dir, dass sie zusammengehören.</p>
+        <p>Man kann sie wieder zusammenführen: Jedes Overlay legt sich exakt über seine Mediendatei. Von Hand heißt das, Paare anhand des Dateinamens zuzuordnen und sie in einem Bildeditor übereinanderzulegen: machbar für zehn Erinnerungen, mühsam für zweitausend. Das ist eine der beiden Aufgaben, die <a href="../">die App</a> automatisiert: Sie ordnet jedes Overlay seinem Snap zu und baut es wieder ein, Fotos und Videos gleichermaßen.</p>
+
+        <h2 id="manual">Wie korrigiere ich das Datum von Hand?</h2>
+        <p>Wenn du dich am Computer wohlfühlst, kannst du das selbst mit kostenlosen Tools machen, und diese Anleitung hilft dir so oder so. Das Rezept:</p>
+        <ol class="steps">
+          <li>Entpacke alle Export-Teile in einen einzigen Ordner auf einem Computer.</li>
+          <li>Öffne <code>memories_history.json</code> und sieh dir die Struktur an: Jeder Eintrag hat ein <code>Date</code>, einen Medientyp und einen Verweis, der ihn mit einer Datei im Ordner verknüpft.</li>
+          <li>Nutze ein Metadaten-Tool wie <strong>ExifTool</strong> (kostenlos, Kommandozeile), um das Datum jedes Eintrags in das Feld <code>DateTimeOriginal</code> der passenden Datei zu schreiben. Für genau das gibt es fertige Skripte; suche nach „exiftool snapchat memories_history".</li>
+          <li>Importiere den Ordner in deine Foto-App. Sind die Aufnahmedaten erst in den Dateien, sortieren sich die Fotos von selbst in die richtigen Jahre.</li>
+        </ol>
+        <p>Was du damit nicht bekommst: Orte auf der Karte (ebenfalls im JSON, aber kniffliger zu schreiben), wieder eingebaute Overlays und jeglichen Komfort auf dem iPhone: Das Rezept will wirklich einen Computer. Diese Lücke ist der Grund, warum es die App gibt: <a href="../">Memories: Save to Photos</a> erledigt Datum, Orte und Texte in einem Durchgang, auf dem Telefon, und die ersten 100 Erinnerungen sind gratis, damit du das Ergebnis mit dieser Anleitung vergleichen kannst, bevor du etwas zahlst.</p>
+
+        <h2>Wann löscht Snapchat die Memorys?</h2>
+        <p>Ende 2025 kündigte Snapchat an, dass Memorys nicht mehr unbegrenzt sind: Kostenlose Konten behalten eine feste Menge Speicher (5&nbsp;GB zum Zeitpunkt der Ankündigung), und alles darüber hinaus erfordert einen kostenpflichtigen Speicherplan. Snapchat hat gesagt, dass Erinnerungen über dem Limit für eine Übergangszeit in temporärem Speicher aufbewahrt werden, aber die Ära von „ist einfach für immer da, gratis" ist vorbei, und solche Bedingungen können sich erneut ändern.</p>
+        <p>Du musst nicht in Panik geraten, und diese Seite tut auch nicht so. Aber die ehrliche Schlussfolgerung lautet: Die einzige Kopie deiner Erinnerungen, die bedingungslos dir gehört, ist die in deiner eigenen Fotomediathek. Der Export dauert einen Abend. Der Abend lohnt sich.</p>
+        <p>Für das ganze Bild zum Speicherlimit und was zu tun ist, siehe <a href="../anleitungen/snapchat-5gb-speicherlimit/">Snapchats 5-GB-Memorys-Limit</a>. Oder, wenn du zwischen Snapchat bezahlen und einer eigenen Kopie schwankst, siehe die <a href="../vergleich/">drei Optionen im Vergleich</a>.</p>
+
+        <h2>Wie sortiere ich die Erinnerungen, wenn ich sie habe?</h2>
+        <p>Wenn du das Datum wiederhergestellt hast (von Hand oder mit der App), ist das Sortieren gratis: Deine Fotomediathek ordnet alles nach Aufnahmedatum, also mischen sich die Erinnerungen unter deine Kamerafotos, tauchen in deinen Jahresansichten und in „An diesem Tag" auf und erscheinen, wo Orte wiederhergestellt wurden, auf der Karte. Es gibt nichts weiter zu organisieren. Das ist der Sinn, die Metadaten zu korrigieren statt Ordner: Die Mediathek, die du ohnehin nutzt, wird zum Archiv.</p>
+        <p>Mit <a href="../">der App</a> ist auch der Import selbst für große Sammlungen gebaut: Du wählst Monat für Monat aus, was importiert wird, statt Foto für Foto, mehrere Zip-Teile werden als ein Export behandelt, und ein pausierter oder unterbrochener Import macht weiter, ohne etwas zu duplizieren.</p>
+
+        <h2>Eine Einstellung, damit du das nie wieder machst</h2>
+        <p>Der Export deckt deine Vergangenheit ab. Für alles ab heute stell in Snapchat eine Einstellung um: <strong>Einstellungen → Memorys → Speicherorte → Memorys und Aufnahmen</strong>. Jeder Snap, den du danach speicherst, landet gleichzeitig in deiner Fotomediathek. Deine Vergangenheit braucht weiterhin den Export, aber nur einmal.</p>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="section-tight">
+      <div class="container prose">
+        <aside class="card card-accent">
+          <h2 style="font-size: var(--fs-h3); margin: 0 0 var(--sp-m);">Zip-Dateien da? Der Rest dauert Minuten.</h2>
+          <p style="color: var(--ink-2); margin-bottom: var(--sp-xl);">Öffne sie in der App, und deine Erinnerungen kommen mit Datum, Orten und Texten zurück, komplett auf deinem iPhone. Erste 100 gratis, dann eine Zahlung. <a href="../datenschutz/">Nichts wird hochgeladen</a>.</p>
+          <!-- TODO: echte App-Store-URL eintragen, und dieses Badge durch Apples offizielles Badge ersetzen -->
+          <a class="appstore-badge" href="https://apps.apple.com/app/idXXXXXXXXXX">
+            <span class="pre">Laden im</span>
+            <span class="name">App Store</span>
+          </a>
+        </aside>
+
+        <p class="micro" style="margin-top: var(--sp-xxl);">„Meine&nbsp;Daten", „Deine Memorys exportieren", „JSON-Dateien exportieren", „Nur Memorys anfordern", „Immer", „In Bearbeitung", „Deine Exporte", „Senden" und „Speicherorte" sind Bezeichnungen aus Snapchats eigener Oberfläche, hier genannt, damit du sie findest. Memories: Save to Photos steht in keiner Verbindung zu Snap&nbsp;Inc.</p>
+      </div>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <nav aria-label="Seiten">
+        <span class="head">Memories: Save to Photos</span>
+        <a href="../">Startseite</a>
+        <a href="../anleitung/">Export-Anleitung</a>
+        <a href="../anleitungen/snapchat-5gb-speicherlimit/">Snapchats 5-GB-Limit</a>
+        <a href="../vergleich/">Optionen im Vergleich</a>
+        <a href="../ueber-uns/">Über uns</a>
+      </nav>
+      <nav aria-label="Rechtliches">
+        <span class="head">Rechtliches</span>
+        <a href="../datenschutz/">Datenschutzerklärung</a>
+        <a href="../nutzungsbedingungen/">Nutzungsbedingungen</a>
+      </nav>
+      <nav aria-label="Support">
+        <span class="head">Support</span>
+        <!-- TODO: Support-E-Mail bestätigen -->
+        <a href="mailto:ludvig.appdeveloper@gmail.com">ludvig.appdeveloper@gmail.com</a>
+      </nav>
+    </div>
+    <p class="legal-line">Memories: Save to Photos steht in keiner Verbindung zu Snap&nbsp;Inc., wird von Snap&nbsp;Inc. weder unterstützt noch gefördert. Snapchat ist eine Marke von Snap&nbsp;Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>

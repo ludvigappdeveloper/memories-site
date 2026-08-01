@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corriger les mauvaises dates d'un export Snapchat</title>
+  <meta name="description" content="Les exports Snapchat datent chaque souvenir du jour de l'export, donc les photos s'entassent sur une seule journée. Voici pourquoi, et comment restaurer les vraies dates de capture.">
+  <link rel="canonical" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/">
+  <link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/">
+  <link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/">
+  <link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-export-falsches-datum/">
+  <link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/corregir-fechas-export-snapchat/">
+  <link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/">
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="icon" type="image/png" href="../../../public/images/favicon.png">
+  <link rel="apple-touch-icon" href="../../../public/images/apple-touch-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Pourquoi votre export Snapchat a les mauvaises dates, et comment les corriger">
+  <meta property="og:description" content="Les exports Snapchat datent chaque souvenir du jour de l'export, donc les photos s'entassent sur une seule journée. Voici pourquoi, et comment restaurer les vraies dates de capture.">
+  <meta property="og:url" content="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/">
+  <meta property="og:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pourquoi votre export Snapchat a les mauvaises dates, et comment les corriger">
+  <meta name="twitter:description" content="Chaque souvenir daté du jour de l'export ? Voici pourquoi ça arrive et comment restaurer les vraies dates de capture et les lieux.">
+  <meta name="twitter:image" content="https://ludvigappdeveloper.github.io/memories-site/public/images/app-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "fr",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Pourquoi toutes mes photos Snapchat exportées ont-elles la même date ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Parce que la date que vous voyez est le jour où vous les avez exportées, pas le jour où elles ont été prises. Snapchat stocke l'heure de capture réelle de chaque souvenir dans sa propre base de données, pas dans le fichier image. Quand il prépare votre export, les fichiers sont écrits à neuf ce jour-là, donc chacun porte la date de l'export et ils s'entassent tous ensemble dans votre photothèque." }
+      },
+      {
+        "@type": "Question",
+        "name": "Pourquoi la date de mes souvenirs exportés est-elle celle d'aujourd'hui ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La date d'aujourd'hui, c'est la date de l'export. Les fichiers photo et vidéo d'un export Snapchat n'ont aucune date de capture d'origine intégrée, donc votre téléphone se rabat sur la date de création du fichier, c'est-à-dire le moment où Snapchat a généré l'export. Les vraies dates ne sont pas perdues ; elles sont stockées à part dans un fichier nommé memories_history.json." }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je corriger les dates après l'export ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, tant que votre export contient les fichiers JSON. Le fichier memories_history.json liste chaque souvenir avec sa vraie date de capture, son heure et, quand c'est connu, son lieu. Tout ce qui lit ce fichier peut réinscrire la bonne date dans chaque photo et vidéo, soit à la main avec un outil gratuit, soit automatiquement avec une app." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment restaurer les vraies dates de capture ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Deux façons. À la main : décompressez l'export sur un ordinateur, lisez memories_history.json, et utilisez un outil de métadonnées gratuit comme ExifTool pour inscrire chaque date dans le champ DateTimeOriginal du fichier. Automatiquement : ouvrez l'export dans Memories: Save to Photos, qui associe chaque fichier à son entrée JSON et inscrit la vraie date, l'heure et le lieu sur votre iPhone. Les 100 premiers souvenirs sont gratuits." }
+      },
+      {
+        "@type": "Question",
+        "name": "Dois-je réexporter pour corriger les dates ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Seulement si votre export n'a aucun fichier JSON. Si vous avez utilisé le raccourci Demander uniquement des souvenirs, le JSON a été laissé de côté et il n'y a rien pour restaurer les dates ; redemandez alors l'export avec Exporter des fichiers JSON activé. Si vous avez déjà les fichiers JSON, pas besoin de réexporter ; il suffit de traiter ce que vous avez." }
+      },
+      {
+        "@type": "Question",
+        "name": "Corriger les dates restaure-t-il aussi les lieux ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ça le peut, car le même fichier memories_history.json enregistre aussi où chaque souvenir a été capturé, quand Snapchat avait cette information. Inscrire le lieu dans les métadonnées de la photo remet le souvenir sur la carte de votre photothèque, exactement comme une photo prise avec l'appareil intégré. L'app restaure les dates et les lieux dans la même passe." }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ludvigappdeveloper.github.io/memories-site/fr/" },
+      { "@type": "ListItem", "position": 2, "name": "Corriger les mauvaises dates d'un export Snapchat", "item": "https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="../../"><img class="brand-logo" src="../../../public/images/logo-96.png" alt="" width="40" height="40" onerror="this.onerror=null;this.src='../../../public/images/app-icon.svg'">Memories<span class="wm-tail">: Save to Photos</span></a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../../guide/">Guide d'export</a>
+      <a href="../../confidentialite/">Confidentialité</a>
+      <a href="../../conditions/">Conditions</a>
+      <!-- TODO : remplacer href par la vraie URL App Store -->
+      <a class="btn-nav" href="https://apps.apple.com/app/idXXXXXXXXXX">Télécharger</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+
+    <header class="section-tight">
+      <div class="container prose">
+        <p class="micro" style="margin-bottom: var(--sp-l);"><a href="../../">Accueil</a> › Guides › Corriger les mauvaises dates d'export</p>
+        <p class="eyebrow">Un problème d'export courant</p>
+        <h1>Pourquoi votre export Snapchat a les mauvaises dates, et comment les corriger</h1>
+        <p class="lede" style="font-size: 1.2rem; color: var(--ink-2); margin-top: var(--sp-l);">Vous avez exporté des années de Souvenirs Snapchat, vous les avez ouverts, et chacun est daté d'aujourd'hui. Rien n'est cassé et rien n'est perdu. Voici exactement pourquoi ça arrive, et comment récupérer les vraies dates.</p>
+      </div>
+    </header>
+
+    <div class="section-tight" style="padding-top: 0;">
+      <div class="container prose">
+        <p>C'est la surprise la plus fréquente avec un export Snapchat, et la bonne nouvelle, c'est que les vraies dates n'ont jamais été supprimées. Elles sont juste stockées à un endroit que votre app photo ne regarde pas par défaut. Une fois que vous savez où elles se trouvent, les restaurer est simple, à la main ou automatiquement.</p>
+
+        <h2>Pourquoi toutes mes photos Snapchat exportées ont-elles la même date ?</h2>
+        <p>Parce que la date que vous voyez est le jour où vous les avez exportées, pas le jour où elles ont été prises. Snapchat stocke l'heure de capture réelle de chaque souvenir dans sa propre base de données, pas dans le fichier image. Quand il prépare votre export, les fichiers sont écrits à neuf ce jour-là, donc chacun porte la date de l'export et ils s'entassent tous ensemble dans votre photothèque.</p>
+
+        <h2>Pourquoi la date de mes souvenirs exportés est-elle celle d'aujourd'hui ?</h2>
+        <p>La date d'aujourd'hui, c'est la date de l'export. Les fichiers photo et vidéo d'un export Snapchat n'ont aucune date de capture d'origine intégrée, donc votre téléphone se rabat sur la date de création du fichier, c'est-à-dire le moment où Snapchat a généré l'export. Les vraies dates ne sont pas perdues ; elles sont stockées à part dans un fichier nommé <code>memories_history.json</code>.</p>
+
+        <h2>Puis-je corriger les dates après l'export ?</h2>
+        <p>Oui, tant que votre export contient les fichiers JSON. Le fichier <code>memories_history.json</code> liste chaque souvenir avec sa vraie date de capture, son heure et, quand c'est connu, son lieu. Tout ce qui lit ce fichier peut réinscrire la bonne date dans chaque photo et vidéo, soit à la main avec un outil gratuit, soit automatiquement avec une app.</p>
+
+        <h2>Comment restaurer les vraies dates de capture ?</h2>
+        <p>Deux façons. À la main : décompressez l'export sur un ordinateur, lisez <code>memories_history.json</code>, et utilisez un outil de métadonnées gratuit comme ExifTool pour inscrire chaque date dans le champ <code>DateTimeOriginal</code> du fichier. Automatiquement : ouvrez l'export dans Memories: Save to Photos, qui associe chaque fichier à son entrée JSON et inscrit la vraie date, l'heure et le lieu sur votre iPhone. Les 100 premiers souvenirs sont gratuits.</p>
+        <p>La recette manuelle est détaillée étape par étape dans le <a href="../../guide/#manual">guide d'export</a>. Elle fonctionne bien sur un ordinateur pour une petite bibliothèque, et devient fastidieuse à grande échelle, ce qui est la raison d'être de l'app.</p>
+
+        <h2>Dois-je réexporter pour corriger les dates ?</h2>
+        <p>Seulement si votre export n'a aucun fichier JSON. Si vous avez utilisé le raccourci Demander uniquement des souvenirs, le JSON a été laissé de côté et il n'y a rien pour restaurer les dates ; redemandez alors l'export avec Exporter des fichiers JSON activé. Si vous avez déjà les fichiers JSON, pas besoin de réexporter ; il suffit de traiter ce que vous avez.</p>
+        <p>Pas sûr de comment la demander correctement ? Voyez <a href="../comment-telecharger-donnees-snapchat/">comment télécharger vos données Snapchat</a> pour les interrupteurs exacts.</p>
+
+        <h2>Corriger les dates restaure-t-il aussi les lieux ?</h2>
+        <p>Ça le peut, car le même fichier <code>memories_history.json</code> enregistre aussi où chaque souvenir a été capturé, quand Snapchat avait cette information. Inscrire le lieu dans les métadonnées de la photo remet le souvenir sur la carte de votre photothèque, exactement comme une photo prise avec l'appareil intégré. L'app restaure les dates et les lieux dans la même passe.</p>
+      </div>
+    </div>
+
+    <div class="section-tight">
+      <div class="container prose">
+        <aside class="card card-accent">
+          <h2 style="font-size: var(--fs-h3); margin: 0 0 var(--sp-m);">Corrigez toutes les dates en une seule passe</h2>
+          <p style="color: var(--ink-2); margin-bottom: var(--sp-xl);">Memories: Save to Photos lit le JSON de votre export et inscrit la vraie date, l'heure et le lieu de capture sur chaque photo et vidéo, pour qu'ils se classent dans les bonnes années et atterrissent sur la carte. Entièrement sur votre iPhone, rien n'est envoyé. 100 premiers gratuits.</p>
+          <!-- TODO : remplacer href par la vraie URL App Store, et ce badge par le badge officiel d'Apple -->
+          <a class="appstore-badge" href="https://apps.apple.com/app/idXXXXXXXXXX">
+            <span class="pre">Télécharger dans l'</span>
+            <span class="name">App Store</span>
+          </a>
+          <p class="micro" style="margin-top: var(--sp-l);">Vous préférez le faire vous-même ? La <a href="../../guide/#manual">méthode manuelle</a> est gratuite et entièrement documentée.</p>
+        </aside>
+        <p class="micro" style="margin-top: var(--sp-xxl);">«&nbsp;Demander uniquement des souvenirs&nbsp;», «&nbsp;Exporter des fichiers JSON&nbsp;» et «&nbsp;Mes données&nbsp;» sont des libellés de l'interface de Snapchat, cités ici pour que vous les retrouviez. Memories: Save to Photos n'est pas affiliée à Snap&nbsp;Inc.</p>
+      </div>
+    </div>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <nav aria-label="Pages">
+        <span class="head">Memories: Save to Photos</span>
+        <a href="../../">Accueil</a>
+        <a href="../../guide/">Guide d'export</a>
+        <a href="../limite-stockage-5-go-snapchat/">La limite de 5&nbsp;Go de Snapchat</a>
+        <a href="../../comparatif/">Options comparées</a>
+        <a href="../../a-propos/">À propos</a>
+      </nav>
+      <nav aria-label="Légal">
+        <span class="head">Légal</span>
+        <a href="../../confidentialite/">Politique de confidentialité</a>
+        <a href="../../conditions/">Conditions d'utilisation</a>
+      </nav>
+      <nav aria-label="Assistance">
+        <span class="head">Assistance</span>
+        <!-- TODO : confirmer l'e-mail d'assistance -->
+        <a href="mailto:ludvig.appdeveloper@gmail.com">ludvig.appdeveloper@gmail.com</a>
+      </nav>
+    </div>
+    <p class="legal-line">Memories: Save to Photos n'est ni affiliée, ni approuvée, ni sponsorisée par Snap&nbsp;Inc. Snapchat est une marque de Snap&nbsp;Inc.</p>
+  </div>
+</footer>
+
+</body>
+</html>

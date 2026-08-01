@@ -311,6 +311,8 @@ h3 { font-size: var(--fs-h3); line-height: 1.3; }
 .pricing-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 4fr); gap: clamp(32px, 5vw, 64px); align-items: center; }
 .price-figure { font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 3.6rem); font-weight: 600; line-height: 1; }
 .price-figure small { font-family: var(--sans); font-size: var(--fs-small); font-weight: 500; color: var(--ink-2); display: block; margin-top: var(--sp-m); letter-spacing: 0; }
+/* Struck-through original price beside the current launch price (sale look). */
+.price-figure .price-was { font-size: 0.5em; font-weight: 500; color: var(--ink-3); text-decoration: line-through; margin-right: 0.35em; vertical-align: middle; }
 @media (max-width: 720px) { .pricing-grid { grid-template-columns: 1fr; } }
 
 /* ---------- FAQ ---------- */

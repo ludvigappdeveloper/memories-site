@@ -1,64 +1,444 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: when the custom domain is live, find/replace the origin below. Keep <lastmod> current when a page's content changes. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- TODO: when the custom domain is live, find/replace the origin below. Keep <lastmod> current when a page content changes. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/guide/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/guide/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/anleitung/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/guia/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitung/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guide/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/limite-stockage-5-go-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-5gb-speicherlimit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/limite-almacenamiento-5gb-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/guides/limite-stockage-5-go-snapchat/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/limite-stockage-5-go-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-5gb-speicherlimit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/limite-almacenamiento-5gb-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-5gb-speicherlimit/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/limite-stockage-5-go-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-5gb-speicherlimit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/limite-almacenamiento-5gb-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/guias/limite-almacenamiento-5gb-snapchat/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/limite-stockage-5-go-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-5gb-speicherlimit/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/limite-almacenamiento-5gb-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-5gb-storage-limit-what-to-do/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/comment-telecharger-donnees-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-daten-herunterladen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/descargar-datos-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/guides/comment-telecharger-donnees-snapchat/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/comment-telecharger-donnees-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-daten-herunterladen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/descargar-datos-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-daten-herunterladen/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/comment-telecharger-donnees-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-daten-herunterladen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/descargar-datos-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/guias/descargar-datos-snapchat/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/comment-telecharger-donnees-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-daten-herunterladen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/descargar-datos-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/how-to-download-snapchat-data/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-export-falsches-datum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/corregir-fechas-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-export-falsches-datum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/corregir-fechas-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-export-falsches-datum/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-export-falsches-datum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/corregir-fechas-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/guias/corregir-fechas-export-snapchat/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/corriger-dates-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-export-falsches-datum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/corregir-fechas-export-snapchat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/fix-snapchat-export-wrong-dates/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/souvenirs-snapchat-vs-pellicule/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-memorys-vs-aufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/recuerdos-snapchat-vs-carrete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/guides/souvenirs-snapchat-vs-pellicule/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/souvenirs-snapchat-vs-pellicule/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-memorys-vs-aufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/recuerdos-snapchat-vs-carrete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-memorys-vs-aufnahmen/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/souvenirs-snapchat-vs-pellicule/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-memorys-vs-aufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/recuerdos-snapchat-vs-carrete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/guias/recuerdos-snapchat-vs-carrete/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/guides/souvenirs-snapchat-vs-pellicule/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/anleitungen/snapchat-memorys-vs-aufnahmen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/guias/recuerdos-snapchat-vs-carrete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/guides/snapchat-memories-vs-camera-roll/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/compare/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/comparatif/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/vergleich/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/comparativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/comparatif/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/comparatif/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/vergleich/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/comparativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/vergleich/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/comparatif/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/vergleich/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/comparativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/comparativa/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/comparatif/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/vergleich/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/comparativa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/compare/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/about/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/a-propos/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/ueber-uns/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/acerca-de/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/a-propos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/ueber-uns/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/acerca-de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/about/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/privacy/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/confidentialite/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/datenschutz/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/privacidad/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/privacy/"/>
   </url>
   <url>
     <loc>https://ludvigappdeveloper.github.io/memories-site/terms/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/conditions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/nutzungsbedingungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/fr/conditions/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/conditions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/nutzungsbedingungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/de/nutzungsbedingungen/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/conditions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/nutzungsbedingungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+  </url>
+  <url>
+    <loc>https://ludvigappdeveloper.github.io/memories-site/es/terminos/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ludvigappdeveloper.github.io/memories-site/fr/conditions/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ludvigappdeveloper.github.io/memories-site/de/nutzungsbedingungen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ludvigappdeveloper.github.io/memories-site/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ludvigappdeveloper.github.io/memories-site/terms/"/>
   </url>
 </urlset>

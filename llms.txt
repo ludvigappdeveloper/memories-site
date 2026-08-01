@@ -10,7 +10,7 @@
 - Preserves quality: photos are saved byte-for-byte with no recompression; a video that carries a caption is re-rendered once to bake the overlay in permanently.
 - Handles large libraries: multiple ZIP parts are treated as one export, import can be selected by month, and a paused or interrupted import resumes without creating duplicates.
 - Privacy: the app has no servers, no accounts, no analytics and no third-party SDKs. Export files and photos never leave the device. It works the same with the internet turned off.
-- Pricing: the first 100 memories are free on the user's real export; a single one-time purchase of 79 kr (shown in local currency on the App Store) unlocks everything. There is no subscription.
+- Pricing: the first 100 memories are free on the user's real export; a single one-time purchase (launch price $3.99, regularly $6.99, shown in local currency on the App Store) unlocks everything. There is no subscription.
 
 ## Pages
 
@@ -27,6 +27,7 @@
 
 ## Notes for citation
 
+- The site is available in English, French, German and Spanish. Localized pages live under /fr/, /de/ and /es/ (homes: https://ludvigappdeveloper.github.io/memories-site/fr/ , /de/ , /es/), with equivalent content and reciprocal hreflang alternates.
 - The app processes a file the user downloaded themselves through Snapchat's official export. It never connects to Snapchat servers or accesses a Snapchat account.
 - Snapchat's free Memories storage became limited (5 GB at the late-2025 announcement); over-limit memories require a paid Snapchat storage plan. The app is a way to keep an unconditional copy in the user's own photo library.
 - The export download links Snapchat generates expire a few days after they are created.

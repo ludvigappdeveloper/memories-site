@@ -112,6 +112,9 @@ h3 { font-size: var(--fs-h3); line-height: 1.3; }
 .small { font-size: var(--fs-small); color: var(--ink-2); }
 .micro { font-size: var(--fs-micro); color: var(--ink-3); }
 
+/* Breathing room when an in-page anchor (e.g. #faq) is jumped to. */
+section[id] { scroll-margin-top: var(--sp-xl); }
+
 /* ---------- Header / nav ---------- */
 
 .site-header {

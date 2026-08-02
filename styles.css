@@ -371,3 +371,8 @@ section[id] { scroll-margin-top: var(--sp-xl); }
 .footer-cols a { color: var(--ink-2); }
 .footer-cols .head { font-weight: 650; color: var(--ink); margin-bottom: var(--sp-xs); }
 .legal-line { color: var(--ink-3); font-size: var(--fs-micro); max-width: 46em; }
+.lang-switch { display: flex; flex-wrap: wrap; gap: var(--sp-s) var(--sp-m); margin-top: var(--sp-l); font-size: var(--fs-small); }
+.lang-switch a { color: var(--ink-3); }
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a[aria-current="page"] { color: var(--ink); font-weight: 650; }
+

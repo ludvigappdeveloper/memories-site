@@ -45,4 +45,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://ludvigappdeveloper.github.io/memories-site/sitemap.xml
+Sitemap: https://memoriestophotos.com/sitemap.xml

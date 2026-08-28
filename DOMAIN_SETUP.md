@@ -99,7 +99,7 @@ Testa även `https://memoriestophotos.com/de/` (tyska) och `/fr/`, `/es/`.
 
 ## Efteråt (inte bråttom)
 
-- Uppdatera App Store Connect-länken när appen fått sitt id (byt `idXXXXXXXXXX`).
+- KLART: App Store-länken satt till `id6794847931` (2026-08-24) på alla sidor och språk.
 - Lägg in en riktig delningsbild (og-image 1200×630).
 - Byt den gröna CTA-knappen mot Apples officiella App Store-badge.
 

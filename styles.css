@@ -212,8 +212,15 @@ section[id] { scroll-margin-top: var(--sp-xl); }
 .cap + .cap { margin-top: clamp(56px, 8vw, 110px); }
 .cap:nth-of-type(even) .cap-text { order: 2; }
 .cap:nth-of-type(even) .cap-shot { order: 1; }
-.cap-shot { max-width: 340px; justify-self: center; }
+.cap-shot { width: 100%; max-width: 340px; justify-self: center; }
+/* Same frame as the hero shot. Every image is cropped to the phone screenshot's aspect
+   ratio so a 9:16 photo sits in the same shape; object-position keeps its subject in frame. */
+.cap-shot img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1179 / 2556; object-fit: cover; object-position: 40% center;
+  border-radius: 24px; border: 1px solid var(--hairline); box-shadow: 0 10px 30px rgba(31, 29, 24, 0.12);
+}
 .cap:nth-of-type(1) .cap-shot { transform: rotate(-2deg); }
+.cap:nth-of-type(2) .cap-shot { transform: rotate(2deg); }
 .cap:nth-of-type(3) .cap-shot { transform: rotate(1.5deg); }
 .cap-text h3 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); margin: var(--sp-s) 0 var(--sp-m); }
 .cap-text p { color: var(--ink-2); max-width: 30em; }
@@ -221,7 +228,7 @@ section[id] { scroll-margin-top: var(--sp-xl); }
   .cap, .cap:nth-of-type(even) { grid-template-columns: 1fr; }
   .cap:nth-of-type(even) .cap-text { order: 1; }
   .cap:nth-of-type(even) .cap-shot { order: 2; }
-  .cap-shot { max-width: 280px; }
+  .cap-shot { max-width: 264px; }
 }
 
 /* ---------- Before / after ---------- */
